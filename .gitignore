@@ -17,5 +17,5 @@ nb-configuration.xml
 *.jar
 *.war
 *.ear
-src/BreatheEasySim/TestMenu.form
-src/BreatheEasySim/TestMenu.java
+*/TestMenu.java
+*/TestMenu.form
