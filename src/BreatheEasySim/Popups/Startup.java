@@ -15,6 +15,18 @@ public class Startup extends javax.swing.JPanel {
      */
     public Startup() {
         initComponents();
+        resumeCurrent.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent e) {
+                System.out.println("resumeCurrent clicked!");
+
+                if(resumeCurrent.getParent().isVisible()){
+                    resumeCurrent.getParent().setVisible(false);
+                } else{
+                    resumeCurrent.getParent().setVisible(true);
+                }
+            }
+        });
     }
 
     /**
@@ -27,108 +39,68 @@ public class Startup extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        genericImageLabel1 = new BreatheEasySim.Components.GenericImageLabel();
-        jLabel2 = new javax.swing.JLabel();
+        resumeCurrent = new BreatheEasySim.Components.GenericImageLabel();
         jLabel3 = new javax.swing.JLabel();
-        genericImageLabel2 = new BreatheEasySim.Components.GenericImageLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        genericImageLabel3 = new BreatheEasySim.Components.GenericImageLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        patientAccept = new BreatheEasySim.Components.GenericImageLabel();
+        jLabel2 = new javax.swing.JLabel();
+        newPatient = new BreatheEasySim.Components.GenericImageLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setForeground(new java.awt.Color(109, 110, 133));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("PATIENT SELECT");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
 
-        genericImageLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
+        resumeCurrent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
+        resumeCurrent.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                resumeCurrentMouseClicked(evt);
+            }
+        });
 
-        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 0, 10)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Resume");
-        genericImageLabel1.add(jLabel2);
-        jLabel2.setBounds(30, 20, 42, 10);
-
-        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 0, 10)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Current");
-        genericImageLabel1.add(jLabel3);
-        jLabel3.setBounds(30, 30, 40, 10);
+        jLabel3.setText("<html><body style='text-align: center'>Resume<br>Current</html>");
+        resumeCurrent.add(jLabel3);
+        jLabel3.setBounds(34, 18, 42, 30);
 
-        genericImageLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
+        add(resumeCurrent, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 64, 109, 67));
 
-        jLabel4.setFont(new java.awt.Font("Helvetica Neue", 0, 10)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Accept");
-        genericImageLabel2.add(jLabel4);
-        jLabel4.setBounds(40, 30, 42, 10);
+        patientAccept.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
 
-        jLabel5.setFont(new java.awt.Font("Helvetica Neue", 0, 10)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Patient");
-        genericImageLabel2.add(jLabel5);
-        jLabel5.setBounds(40, 20, 40, 10);
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("<html><body style='text-align: center'>Patient<br>Accept</html>");
+        patientAccept.add(jLabel2);
+        jLabel2.setBounds(35, 18, 42, 30);
 
-        genericImageLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
+        add(patientAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 203, 109, 67));
 
-        jLabel6.setFont(new java.awt.Font("Helvetica Neue", 0, 10)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("New");
-        genericImageLabel3.add(jLabel6);
-        jLabel6.setBounds(50, 20, 42, 10);
+        newPatient.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("Helvetica Neue", 0, 10)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Patient");
-        genericImageLabel3.add(jLabel7);
-        jLabel7.setBounds(40, 30, 40, 10);
+        jLabel8.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("<html><body style='text-align: center'>New<br>Patient</html>");
+        newPatient.add(jLabel8);
+        jLabel8.setBounds(35, 18, 42, 30);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(genericImageLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 126, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(genericImageLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(genericImageLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(genericImageLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(72, 72, 72)
-                        .addComponent(genericImageLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(genericImageLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
+        add(newPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 64, 109, 67));
     }// </editor-fold>//GEN-END:initComponents
 
+    private void resumeCurrentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_resumeCurrentMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_resumeCurrentMouseClicked
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private BreatheEasySim.Components.GenericImageLabel genericImageLabel1;
-    private BreatheEasySim.Components.GenericImageLabel genericImageLabel2;
-    private BreatheEasySim.Components.GenericImageLabel genericImageLabel3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private BreatheEasySim.Components.GenericImageLabel newPatient;
+    private BreatheEasySim.Components.GenericImageLabel patientAccept;
+    private BreatheEasySim.Components.GenericImageLabel resumeCurrent;
     // End of variables declaration//GEN-END:variables
 }
