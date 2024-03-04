@@ -46,7 +46,7 @@ public class Startup extends javax.swing.JPanel {
         newPatient = new BreatheEasySim.Components.GenericImageLabel();
         jLabel8 = new javax.swing.JLabel();
 
-        setForeground(new java.awt.Color(109, 110, 133));
+        setForeground(new java.awt.Color(162, 164, 191));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
