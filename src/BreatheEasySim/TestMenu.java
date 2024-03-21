@@ -34,6 +34,7 @@ public class TestMenu extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        startup1 = new BreatheEasySim.Popups.Startup();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(45, 50, 79));
@@ -68,6 +69,7 @@ public class TestMenu extends javax.swing.JFrame {
 
         jButton1.setText("jButton1");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
+        getContentPane().add(startup1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 130, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -114,5 +116,6 @@ public class TestMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private BreatheEasySim.Popups.Startup startup1;
     // End of variables declaration//GEN-END:variables
 }
