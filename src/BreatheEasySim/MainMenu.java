@@ -5,6 +5,8 @@
 package BreatheEasySim;
 
 import java.awt.Color;
+import java.awt.event.*;
+import java.util.*;
 
 /**
  *
@@ -18,7 +20,49 @@ public class MainMenu extends javax.swing.JFrame {
     public MainMenu() {
         initComponents();
         getContentPane().setBackground(new Color(40,40,178));
+        
+        
+        mainLabel.addMouseListener(new MouseAdapter(){
+            @Override
+            public void mouseClicked(MouseEvent m){
+                if(screenSelect1.isVisible()){
+                    screenSelect1.setVisible(false);
+                }
+                else{
+                    screenSelect1.setVisible(true);
+                } 
+                System.out.println("Main Label Clicked!");
+            }
+        });
+        screenSelect1.utilities.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent e) {
+                System.out.println("Utilities Button Pressed!");
+                screenSelect1.utilities.getParent().setVisible(false);
+                mainScreenPanel3.utilities.setVisible(true);
+                mainSidePanel1.utilitiesSide1.setVisible(true);
+                mainScreenPanel3.main1.setVisible(false);
+                mainSidePanel1.mainSide1.setVisible(false);
+                mainLabel.setText("        UTILITY");
+                
+            }
+        });
+        screenSelect1.main.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent e) {
+                System.out.println("Main Button Pressed!");
+                screenSelect1.main.getParent().setVisible(false);
+                mainScreenPanel3.main1.setVisible(true);
+                mainSidePanel1.mainSide1.setVisible(true);
+                mainScreenPanel3.utilities.setVisible(false);
+                mainSidePanel1.utilitiesSide1.setVisible(false);
+                mainLabel.setText("        MAIN");
+                
+            }
+        });
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -30,11 +74,13 @@ public class MainMenu extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        mainLabel = new javax.swing.JLabel();
+        screenSelect1 = new BreatheEasySim.Popups.ScreenSelect();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         mainSidePanel1 = new BreatheEasySim.Components.MainSidePanel();
         mainBottomPanel1 = new BreatheEasySim.Components.MainBottomPanel();
+        mainScreenPanel3 = new BreatheEasySim.Components.MainScreenPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(45, 50, 79));
@@ -47,12 +93,14 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel1.setOpaque(true);
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 370, 44));
 
-        jLabel3.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("        MAIN");
-        jLabel3.setOpaque(true);
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, 100, 44));
+        mainLabel.setBackground(new java.awt.Color(0, 0, 0));
+        mainLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        mainLabel.setForeground(new java.awt.Color(255, 255, 255));
+        mainLabel.setText("          MAIN");
+        mainLabel.setOpaque(true);
+        getContentPane().add(mainLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, 100, 44));
+        getContentPane().add(screenSelect1, new org.netbeans.lib.awtextra.AbsoluteConstraints(225, 50, 390, 300));
+        screenSelect1.setVisible(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -67,7 +115,13 @@ public class MainMenu extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, 360, -1));
         getContentPane().add(mainSidePanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, -1));
-        getContentPane().add(mainBottomPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 580, 830, 40));
+        mainSidePanel1.mainSide1.setVisible(true);
+
+        getContentPane().add(mainBottomPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 580, 320, 40));
+
+        mainScreenPanel3.setBackground(new java.awt.Color(40, 40, 178));
+        getContentPane().add(mainScreenPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 710, 425));
+        mainScreenPanel3.main1.setVisible(true);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -106,13 +160,14 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private BreatheEasySim.Components.MainBottomPanel mainBottomPanel1;
+    private javax.swing.JLabel mainLabel;
+    private BreatheEasySim.Components.MainScreenPanel mainScreenPanel3;
     private BreatheEasySim.Components.MainSidePanel mainSidePanel1;
+    private BreatheEasySim.Popups.ScreenSelect screenSelect1;
     // End of variables declaration//GEN-END:variables
 }
