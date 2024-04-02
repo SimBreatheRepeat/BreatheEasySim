@@ -5,6 +5,8 @@
 package BreatheEasySim;
 
 import java.awt.Color;
+import java.util.Calendar;
+import java.text.*;
 
 /**
  *
@@ -18,7 +20,20 @@ public class MainMenu extends javax.swing.JFrame {
     public MainMenu() {
         initComponents();
         getContentPane().setBackground(new Color(40,40,178));
+        /*int month = 4;
+        int day = 2;
+        int year = 2024;
+        int hour = 5;
+        int minute = 36;
+        LocalDate myDateObj = LocalDate.of(year,month,day);  
+        LocalTime myTimeObj = LocalTime.of(hour,minute);  
+        DateTimeFormatter myDateFormatObj = DateTimeFormatter.ofPattern("E MMM dd, yyyy ");  
+        DateTimeFormatter myTimeFormatObj = DateTimeFormatter.ofPattern("HH:mm");  
+        String formattedDate = myDateObj.format(myDateFormatObj);
+        String formattedTime = myTimeObj.format(myTimeFormatObj);  
+        jLabel4.setText(formattedDate + formattedTime);*/
     }
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -35,6 +50,7 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         mainSidePanel1 = new BreatheEasySim.Components.MainSidePanel();
         mainBottomPanel1 = new BreatheEasySim.Components.MainBottomPanel();
+        notificationBar1 = new BreatheEasySim.Components.NotificationBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(45, 50, 79));
@@ -67,7 +83,8 @@ public class MainMenu extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, 360, -1));
         getContentPane().add(mainSidePanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, -1));
-        getContentPane().add(mainBottomPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 580, 830, 40));
+        getContentPane().add(mainBottomPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 580, 320, 40));
+        getContentPane().add(notificationBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 570, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -114,5 +131,6 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private BreatheEasySim.Components.MainBottomPanel mainBottomPanel1;
     private BreatheEasySim.Components.MainSidePanel mainSidePanel1;
+    private BreatheEasySim.Components.NotificationBar notificationBar1;
     // End of variables declaration//GEN-END:variables
 }
