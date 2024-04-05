@@ -19,14 +19,14 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="purpleCurveButton1" alignment="1" min="-2" pref="117" max="-2" attributes="0"/>
-                  <Component id="purpleCurveButton2" alignment="1" min="-2" pref="117" max="-2" attributes="0"/>
-                  <Component id="purpleCurveButton3" alignment="1" min="-2" pref="117" max="-2" attributes="0"/>
-                  <Component id="purpleCurveButton4" alignment="1" min="-2" pref="117" max="-2" attributes="0"/>
-                  <Component id="purpleCurveButton5" alignment="1" min="-2" pref="117" max="-2" attributes="0"/>
+                  <Component id="purpleCurveButton4" alignment="1" pref="209" max="32767" attributes="0"/>
+                  <Component id="purpleCurveButton3" alignment="1" max="32767" attributes="0"/>
+                  <Component id="purpleCurveButton2" alignment="1" max="32767" attributes="0"/>
+                  <Component id="purpleCurveButton1" max="32767" attributes="0"/>
+                  <Component id="purpleCurveButton5" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -35,16 +35,16 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="purpleCurveButton1" min="-2" pref="73" max="-2" attributes="0"/>
+              <Component id="purpleCurveButton1" min="-2" pref="138" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="purpleCurveButton2" min="-2" pref="73" max="-2" attributes="0"/>
+              <Component id="purpleCurveButton2" min="-2" pref="138" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="purpleCurveButton3" min="-2" pref="73" max="-2" attributes="0"/>
+              <Component id="purpleCurveButton3" min="-2" pref="138" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="purpleCurveButton4" min="-2" pref="73" max="-2" attributes="0"/>
+              <Component id="purpleCurveButton4" min="-2" pref="138" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="purpleCurveButton5" min="-2" pref="73" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <Component id="purpleCurveButton5" min="-2" pref="138" max="-2" attributes="0"/>
+              <EmptySpace pref="19" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

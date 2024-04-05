@@ -61,7 +61,7 @@ public class MainBottomPanel extends javax.swing.JPanel {
         purpleCurveButton1.add(jLabel3);
         jLabel3.setBounds(55, 10, 50, 16);
 
-        add(purpleCurveButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 158, 33));
+        add(purpleCurveButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 288, 59));
 
         purpleCurveButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Bottom Label.png"))); // NOI18N
 
@@ -70,23 +70,23 @@ public class MainBottomPanel extends javax.swing.JPanel {
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("L");
         purpleCurveButton2.add(jLabel4);
-        jLabel4.setBounds(147, 0, 10, 11);
+        jLabel4.setBounds(180, 0, 60, 50);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Calcve");
         purpleCurveButton2.add(jLabel5);
-        jLabel5.setBounds(0, 0, 40, 11);
+        jLabel5.setBounds(40, 0, 90, 50);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("1:8.4");
         purpleCurveButton2.add(jLabel6);
-        jLabel6.setBounds(55, 10, 50, 16);
+        jLabel6.setBounds(90, 10, 100, 50);
 
-        add(purpleCurveButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 158, 33));
+        add(purpleCurveButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, 288, 59));
     }// </editor-fold>//GEN-END:initComponents
 
 

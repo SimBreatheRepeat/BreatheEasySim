@@ -5,8 +5,12 @@
 package BreatheEasySim;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.event.*;
-import java.util.*;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
+import java.awt.Toolkit;
+import javax.swing.JFrame;
 
 /**
  *
@@ -18,7 +22,13 @@ public class MainMenu extends javax.swing.JFrame {
      * Creates new form MainMenu
      */
     public MainMenu() {
+        /*GraphicsEnvironment graphics =
+        GraphicsEnvironment.getLocalGraphicsEnvironment();
+        GraphicsDevice device = graphics.getDefaultScreenDevice();
+        device.setFullScreenWindow(this);*/
+        
         initComponents();
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         getContentPane().setBackground(new Color(40,40,178));
         
         
@@ -43,7 +53,7 @@ public class MainMenu extends javax.swing.JFrame {
                 mainSidePanel1.utilitiesSide1.setVisible(true);
                 mainScreenPanel3.main1.setVisible(false);
                 mainSidePanel1.mainSide1.setVisible(false);
-                mainLabel.setText("        UTILITY");
+                mainLabel.setText("UTILITY");
                 
             }
         });
@@ -56,7 +66,7 @@ public class MainMenu extends javax.swing.JFrame {
                 mainSidePanel1.mainSide1.setVisible(true);
                 mainScreenPanel3.utilities.setVisible(false);
                 mainSidePanel1.utilitiesSide1.setVisible(false);
-                mainLabel.setText("        MAIN");
+                mainLabel.setText("MAIN");
                 
             }
         });
@@ -91,15 +101,16 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText(" VOLUME A/C");
         jLabel1.setOpaque(true);
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 370, 44));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 44));
 
         mainLabel.setBackground(new java.awt.Color(0, 0, 0));
         mainLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         mainLabel.setForeground(new java.awt.Color(255, 255, 255));
-        mainLabel.setText("          MAIN");
+        mainLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        mainLabel.setText("MAIN");
         mainLabel.setOpaque(true);
-        getContentPane().add(mainLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, 100, 44));
-        getContentPane().add(screenSelect1, new org.netbeans.lib.awtextra.AbsoluteConstraints(225, 50, 390, 300));
+        getContentPane().add(mainLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(502, 0, 110, 44));
+        getContentPane().add(screenSelect1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 50, 390, 300));
         screenSelect1.setVisible(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 51, 51));
@@ -111,17 +122,20 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel2.setText("CIRCUIT DISCONECT");
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jLabel2.setOpaque(true);
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 260, 44));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 160, 44));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, 360, -1));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 0, 420, -1));
         getContentPane().add(mainSidePanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, -1));
         mainSidePanel1.mainSide1.setVisible(true);
 
-        getContentPane().add(mainBottomPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 580, 320, 40));
+        getContentPane().add(mainBottomPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 1040, 320, 40));
 
         mainScreenPanel3.setBackground(new java.awt.Color(40, 40, 178));
-        getContentPane().add(mainScreenPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 710, 425));
+        mainScreenPanel3.setPreferredSize(new java.awt.Dimension(889, 425));
+        getContentPane().add(mainScreenPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 900, 425));
         mainScreenPanel3.main1.setVisible(true);
+
+        getAccessibleContext().setAccessibleParent(this);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -159,6 +173,9 @@ public class MainMenu extends javax.swing.JFrame {
                 new MainMenu().setVisible(true);
             }
         });
+        
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        System.out.printf("%f, %f", screenSize.getHeight(), screenSize.getWidth());
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;

@@ -40,20 +40,20 @@ public class MainScreenPanel extends javax.swing.JPanel {
 
         jLayeredPane1.setOpaque(true);
 
-        main1.setPreferredSize(new java.awt.Dimension(710, 425));
+        main1.setPreferredSize(new java.awt.Dimension(889, 425));
 
         javax.swing.GroupLayout main1Layout = new javax.swing.GroupLayout(main1);
         main1.setLayout(main1Layout);
         main1Layout.setHorizontalGroup(
             main1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 710, Short.MAX_VALUE)
+            .addGap(0, 800, Short.MAX_VALUE)
         );
         main1Layout.setVerticalGroup(
             main1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 425, Short.MAX_VALUE)
         );
 
-        utilities.setPreferredSize(new java.awt.Dimension(710, 425));
+        utilities.setPreferredSize(new java.awt.Dimension(889, 425));
 
         jLayeredPane1.setLayer(main1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(utilities, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -64,8 +64,8 @@ public class MainScreenPanel extends javax.swing.JPanel {
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(main1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(main1, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(95, Short.MAX_VALUE))
             .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jLayeredPane1Layout.createSequentialGroup()
                     .addContainerGap()
