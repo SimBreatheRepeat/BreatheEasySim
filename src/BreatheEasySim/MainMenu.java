@@ -91,6 +91,7 @@ public class MainMenu extends javax.swing.JFrame {
         mainSidePanel1 = new BreatheEasySim.Components.MainSidePanel();
         mainBottomPanel1 = new BreatheEasySim.Components.MainBottomPanel();
         mainScreenPanel3 = new BreatheEasySim.Components.MainScreenPanel();
+        mainGaugePanel1 = new BreatheEasySim.Components.MainGaugePanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(45, 50, 79));
@@ -134,6 +135,8 @@ public class MainMenu extends javax.swing.JFrame {
         mainScreenPanel3.setPreferredSize(new java.awt.Dimension(889, 425));
         getContentPane().add(mainScreenPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 900, 425));
         mainScreenPanel3.main1.setVisible(true);
+
+        getContentPane().add(mainGaugePanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 910, -1, -1));
 
         getAccessibleContext().setAccessibleParent(this);
 
@@ -182,6 +185,7 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private BreatheEasySim.Components.MainBottomPanel mainBottomPanel1;
+    private BreatheEasySim.Components.MainGaugePanel mainGaugePanel1;
     private javax.swing.JLabel mainLabel;
     private BreatheEasySim.Components.MainScreenPanel mainScreenPanel3;
     private BreatheEasySim.Components.MainSidePanel mainSidePanel1;
