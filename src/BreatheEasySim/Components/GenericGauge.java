@@ -133,7 +133,7 @@ public class GenericGauge extends JComponent {
         Loca end = getLocation(ang, angleSize);
         g2.fill(new Ellipse2D.Float(centerX + end.x - 2, centerY - end.y - 2, 6, 6));
         
-        drawText(g2, centerX - 2, centerY - 10, angleSize);
+        drawText(g2, centerX - 5, centerY - 5, angleSize);
         super.paint(grphcs);
     }
 
@@ -144,7 +144,7 @@ public class GenericGauge extends JComponent {
         float n = v / max * 100f;
         String text = String.valueOf((int) n);
         FontMetrics ft = g2.getFontMetrics();
-        g2.setFont(new Font("Segoe UI", Font.BOLD, 24));
+        g2.setFont(new Font("Segoe UI", Font.BOLD, 50));
         g2.setColor(Color.WHITE);
         Rectangle2D r2 = ft.getStringBounds(text, g2);
         g2.drawString(text, (float) (x - r2.getWidth() / 2f), (float) (y + size - r2.getHeight()));

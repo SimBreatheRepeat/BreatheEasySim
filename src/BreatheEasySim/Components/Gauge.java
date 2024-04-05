@@ -31,9 +31,9 @@ public class Gauge extends javax.swing.JPanel {
     private void initComponents() {
 
         label = new BreatheEasySim.Components.GenericImageLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         genericGauge = new BreatheEasySim.Components.GenericGauge();
+        jLabel2 = new javax.swing.JLabel();
 
         setOpaque(false);
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -41,34 +41,40 @@ public class Gauge extends javax.swing.JPanel {
         label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Gauge Label.png"))); // NOI18N
         label.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Unit");
-        label.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 50, -1));
-
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Name");
-        label.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 6, 90, 20));
+        label.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 150, 30));
 
-        add(label, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 90, 30));
+        add(label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 150, 110));
 
+        genericGauge.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         genericGauge.setGaugeSize(6);
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Unit");
 
         javax.swing.GroupLayout genericGaugeLayout = new javax.swing.GroupLayout(genericGauge);
         genericGauge.setLayout(genericGaugeLayout);
         genericGaugeLayout.setHorizontalGroup(
             genericGaugeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 90, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, genericGaugeLayout.createSequentialGroup()
+                .addContainerGap(49, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45))
         );
         genericGaugeLayout.setVerticalGroup(
             genericGaugeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 80, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, genericGaugeLayout.createSequentialGroup()
+                .addContainerGap(87, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
-        add(genericGauge, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 90, 80));
+        add(genericGauge, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 190, 120));
     }// </editor-fold>//GEN-END:initComponents
 
 
