@@ -74,136 +74,146 @@ public class UtilitiesSide extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         purpleCurveButton3 = new BreatheEasySim.Components.GenericImageLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        purpleCurveButton4 = new BreatheEasySim.Components.GenericImageLabel();
-        jLabel9 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        purpleCurveButton4 = new BreatheEasySim.Components.GenericImageLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         purpleCurveButton5 = new BreatheEasySim.Components.GenericImageLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
 
         setOpaque(false);
 
         purpleCurveButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/LS Button.png"))); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("L");
         purpleCurveButton1.add(jLabel1);
-        jLabel1.setBounds(40, 40, 37, 14);
+        jLabel1.setBounds(0, 90, 190, 20);
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Vte");
         purpleCurveButton1.add(jLabel4);
-        jLabel4.setBounds(7, 50, 100, 16);
+        jLabel4.setBounds(0, 102, 190, 30);
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 40)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("***");
         purpleCurveButton1.add(jLabel5);
-        jLabel5.setBounds(40, 10, 37, 32);
+        jLabel5.setBounds(0, 10, 190, 54);
 
         purpleCurveButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/LS Button.png"))); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("bpm");
         purpleCurveButton2.add(jLabel2);
-        jLabel2.setBounds(40, 40, 37, 14);
+        jLabel2.setBounds(0, 90, 190, 20);
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Rate");
         purpleCurveButton2.add(jLabel6);
-        jLabel6.setBounds(40, 50, 37, 16);
+        jLabel6.setBounds(0, 102, 190, 30);
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 40)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("***");
         purpleCurveButton2.add(jLabel7);
-        jLabel7.setBounds(40, 10, 37, 32);
+        jLabel7.setBounds(0, 10, 190, 54);
 
         purpleCurveButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/LS Button.png"))); // NOI18N
 
-        jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("***");
-        purpleCurveButton3.add(jLabel16);
-        jLabel16.setBounds(40, 10, 37, 32);
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        purpleCurveButton3.add(jLabel3);
+        jLabel3.setBounds(0, 90, 190, 20);
 
-        jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel17.setText("I:E");
-        purpleCurveButton3.add(jLabel17);
-        jLabel17.setBounds(7, 50, 100, 16);
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("I:E");
+        purpleCurveButton3.add(jLabel8);
+        jLabel8.setBounds(0, 102, 190, 30);
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 40)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("***");
+        purpleCurveButton3.add(jLabel9);
+        jLabel9.setBounds(0, 10, 190, 54);
 
         purpleCurveButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/LS Button.png"))); // NOI18N
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("3");
-        purpleCurveButton4.add(jLabel9);
-        jLabel9.setBounds(7, 10, 100, 32);
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setText("cmH2O");
+        purpleCurveButton4.add(jLabel10);
+        jLabel10.setBounds(0, 90, 190, 20);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("cmH2O");
-        purpleCurveButton4.add(jLabel3);
-        jLabel3.setBounds(7, 40, 100, 14);
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel11.setText("Ppeak");
+        purpleCurveButton4.add(jLabel11);
+        jLabel11.setBounds(0, 102, 190, 30);
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Ppeak");
-        purpleCurveButton4.add(jLabel8);
-        jLabel8.setBounds(7, 50, 100, 16);
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 40)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("3");
+        purpleCurveButton4.add(jLabel12);
+        jLabel12.setBounds(0, 10, 190, 54);
 
         purpleCurveButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/LS Button.png"))); // NOI18N
 
-        jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel18.setText("3");
-        purpleCurveButton5.add(jLabel18);
-        jLabel18.setBounds(7, 10, 100, 32);
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setText("cmH2O");
+        purpleCurveButton5.add(jLabel13);
+        jLabel13.setBounds(0, 90, 190, 20);
 
-        jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel19.setText("cmH2O");
-        purpleCurveButton5.add(jLabel19);
-        jLabel19.setBounds(7, 40, 100, 14);
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setText("PEEP");
+        purpleCurveButton5.add(jLabel14);
+        jLabel14.setBounds(0, 102, 190, 30);
 
-        jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel20.setText("PEEP");
-        purpleCurveButton5.add(jLabel20);
-        jLabel20.setBounds(7, 50, 100, 16);
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 40)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel15.setText("3");
+        purpleCurveButton5.add(jLabel15);
+        jLabel15.setBounds(0, 10, 190, 54);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(purpleCurveButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 209, Short.MAX_VALUE)
-                    .addComponent(purpleCurveButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(purpleCurveButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(purpleCurveButton5, javax.swing.GroupLayout.DEFAULT_SIZE, 209, Short.MAX_VALUE)
                     .addComponent(purpleCurveButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(purpleCurveButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(purpleCurveButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(purpleCurveButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(purpleCurveButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -225,12 +235,13 @@ public class UtilitiesSide extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -238,10 +249,10 @@ public class UtilitiesSide extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private BreatheEasySim.Components.GenericImageLabel purpleCurveButton1;
-    private BreatheEasySim.Components.GenericImageLabel purpleCurveButton2;
-    private BreatheEasySim.Components.GenericImageLabel purpleCurveButton3;
-    private BreatheEasySim.Components.GenericImageLabel purpleCurveButton4;
-    private BreatheEasySim.Components.GenericImageLabel purpleCurveButton5;
+    public BreatheEasySim.Components.GenericImageLabel purpleCurveButton1;
+    public BreatheEasySim.Components.GenericImageLabel purpleCurveButton2;
+    public BreatheEasySim.Components.GenericImageLabel purpleCurveButton3;
+    public BreatheEasySim.Components.GenericImageLabel purpleCurveButton4;
+    public BreatheEasySim.Components.GenericImageLabel purpleCurveButton5;
     // End of variables declaration//GEN-END:variables
 }

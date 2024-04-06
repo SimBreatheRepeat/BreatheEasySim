@@ -52,20 +52,20 @@ public class Main extends javax.swing.JPanel {
                 .addGroup(layout.createSequentialGroup()
                     .addGap(16, 16, 16)
                     .addComponent(chartP2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(8, Short.MAX_VALUE)))
+                    .addContainerGap(784, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(219, Short.MAX_VALUE)
+                .addContainerGap(291, Short.MAX_VALUE)
                 .addComponent(chartP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(79, 79, 79)
                 .addComponent(chartP3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(10, 10, 10)
                     .addComponent(chartP2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(425, Short.MAX_VALUE)))
+                    .addContainerGap(570, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 

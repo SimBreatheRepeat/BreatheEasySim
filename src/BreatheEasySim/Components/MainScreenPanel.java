@@ -33,30 +33,18 @@ public class MainScreenPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        main1 = new BreatheEasySim.Screens.Main();
         utilities = new BreatheEasySim.Screens.Utilities();
+        main1 = new BreatheEasySim.Screens.Main();
 
-        setPreferredSize(new java.awt.Dimension(710, 425));
+        setPreferredSize(new java.awt.Dimension(1710, 790));
 
         jLayeredPane1.setOpaque(true);
+        jLayeredPane1.setPreferredSize(new java.awt.Dimension(1710, 790));
 
-        main1.setPreferredSize(new java.awt.Dimension(889, 425));
+        utilities.setPreferredSize(new java.awt.Dimension(1710, 790));
 
-        javax.swing.GroupLayout main1Layout = new javax.swing.GroupLayout(main1);
-        main1.setLayout(main1Layout);
-        main1Layout.setHorizontalGroup(
-            main1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
-        );
-        main1Layout.setVerticalGroup(
-            main1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 425, Short.MAX_VALUE)
-        );
-
-        utilities.setPreferredSize(new java.awt.Dimension(889, 425));
-
-        jLayeredPane1.setLayer(main1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(utilities, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(main1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
@@ -64,28 +52,21 @@ public class MainScreenPanel extends javax.swing.JPanel {
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(main1, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(95, Short.MAX_VALUE))
-            .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(utilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addComponent(utilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(main1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(main1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                    .addContainerGap()
+            .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(utilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(main1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        main1.setVisible(false);
         utilities.setVisible(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

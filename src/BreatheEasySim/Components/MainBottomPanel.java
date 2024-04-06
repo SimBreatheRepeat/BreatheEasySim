@@ -40,51 +40,49 @@ public class MainBottomPanel extends javax.swing.JPanel {
 
         purpleCurveButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Bottom Label.png"))); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel1.setText("L");
         purpleCurveButton1.add(jLabel1);
-        jLabel1.setBounds(147, 0, 10, 11);
+        jLabel1.setBounds(207, 0, 75, 20);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Calcve");
         purpleCurveButton1.add(jLabel2);
-        jLabel2.setBounds(0, 0, 40, 11);
+        jLabel2.setBounds(3, 0, 75, 20);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 32)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("4.80");
         purpleCurveButton1.add(jLabel3);
-        jLabel3.setBounds(55, 10, 50, 16);
+        jLabel3.setBounds(0, 10, 287, 40);
 
         add(purpleCurveButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 288, 59));
 
         purpleCurveButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Bottom Label.png"))); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel4.setText("L");
         purpleCurveButton2.add(jLabel4);
-        jLabel4.setBounds(180, 0, 60, 50);
+        jLabel4.setBounds(207, 0, 75, 20);
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Calcve");
         purpleCurveButton2.add(jLabel5);
-        jLabel5.setBounds(40, 0, 90, 50);
+        jLabel5.setBounds(3, 0, 75, 20);
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 32)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("1:8.4");
         purpleCurveButton2.add(jLabel6);
-        jLabel6.setBounds(90, 10, 100, 50);
+        jLabel6.setBounds(0, 10, 287, 40);
 
         add(purpleCurveButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, 288, 59));
     }// </editor-fold>//GEN-END:initComponents
