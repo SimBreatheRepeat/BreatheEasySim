@@ -164,6 +164,7 @@ public class Utilities extends javax.swing.JPanel {
         bigButtonUnitsLabel = new javax.swing.JLabel();
         bigNumberLabel = new javax.swing.JLabel();
         ilvModeLabel = new javax.swing.JLabel();
+        utilitiesConfigurationTabGaugePanel1 = new BreatheEasySim.Components.UtilitiesConfigurationTabGaugePanel();
         jPanel2 = new javax.swing.JPanel();
         analogInputLabel = new javax.swing.JLabel();
         rsOutputLabel = new javax.swing.JLabel();
@@ -232,96 +233,98 @@ public class Utilities extends javax.swing.JPanel {
 
         increaseButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
 
-        increaseLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        increaseLabel.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         increaseLabel.setForeground(new java.awt.Color(255, 255, 255));
         increaseLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         increaseLabel.setText("Increase");
         increaseLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         increaseButton.add(increaseLabel);
-        increaseLabel.setBounds(0, 0, 100, 60);
+        increaseLabel.setBounds(0, 27, 169, 50);
 
         decreaseButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
 
-        decreaseLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        decreaseLabel.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         decreaseLabel.setForeground(new java.awt.Color(255, 255, 255));
         decreaseLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         decreaseLabel.setText("Decrease");
         decreaseLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         decreaseButton.add(decreaseLabel);
-        decreaseLabel.setBounds(0, 0, 100, 60);
+        decreaseLabel.setBounds(0, 27, 169, 50);
 
         flowControlButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
 
-        btpsLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btpsLabel.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         btpsLabel.setForeground(new java.awt.Color(255, 255, 255));
         btpsLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btpsLabel.setText("BTPS");
         btpsLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         flowControlButton.add(btpsLabel);
-        btpsLabel.setBounds(0, 0, 100, 50);
+        btpsLabel.setBounds(0, 27, 169, 50);
 
         o2AlarmButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
 
-        enabledLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        enabledLabel.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         enabledLabel.setForeground(new java.awt.Color(255, 255, 255));
         enabledLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         enabledLabel.setText("Enabled");
         enabledLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         o2AlarmButton.add(enabledLabel);
-        enabledLabel.setBounds(0, 0, 100, 50);
+        enabledLabel.setBounds(0, 27, 169, 50);
 
         ilvModeSlaveButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
 
-        slaveLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        slaveLabel.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         slaveLabel.setForeground(new java.awt.Color(255, 255, 255));
         slaveLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         slaveLabel.setText("Slave");
         slaveLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ilvModeSlaveButton.add(slaveLabel);
-        slaveLabel.setBounds(0, 0, 100, 60);
+        slaveLabel.setBounds(0, 27, 169, 50);
 
         ilvModeMasterButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
 
-        masterLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        masterLabel.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         masterLabel.setForeground(new java.awt.Color(255, 255, 255));
         masterLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         masterLabel.setText("Master");
         masterLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ilvModeMasterButton.add(masterLabel);
-        masterLabel.setBounds(0, 0, 100, 60);
+        masterLabel.setBounds(0, 27, 169, 50);
 
         ilvModeOnButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
 
-        onLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        onLabel.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         onLabel.setForeground(new java.awt.Color(255, 255, 255));
         onLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         onLabel.setText("On");
         onLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ilvModeOnButton.add(onLabel);
-        onLabel.setBounds(0, 0, 193, 60);
+        onLabel.setBounds(0, 27, 167, 50);
 
         BigButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Big Button.png"))); // NOI18N
 
-        bigButtonUnitsLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        bigButtonUnitsLabel.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         bigButtonUnitsLabel.setForeground(new java.awt.Color(255, 255, 255));
         bigButtonUnitsLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         bigButtonUnitsLabel.setText("<html><body style='text-align: center'>mmHg<br>Pbare</html>");
         bigButtonUnitsLabel.setAutoscrolls(true);
         bigButtonUnitsLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BigButton.add(bigButtonUnitsLabel);
-        bigButtonUnitsLabel.setBounds(0, 60, 210, 30);
+        bigButtonUnitsLabel.setBounds(0, 90, 210, 50);
 
-        bigNumberLabel.setFont(new java.awt.Font("Segoe UI", 1, 40)); // NOI18N
+        bigNumberLabel.setFont(new java.awt.Font("Segoe UI", 1, 64)); // NOI18N
         bigNumberLabel.setForeground(new java.awt.Color(255, 255, 255));
         bigNumberLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         bigNumberLabel.setText("745");
         bigNumberLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BigButton.add(bigNumberLabel);
-        bigNumberLabel.setBounds(0, 0, 210, 50);
+        bigNumberLabel.setBounds(0, 0, 210, 60);
 
         ilvModeLabel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         ilvModeLabel.setForeground(new java.awt.Color(255, 255, 255));
         ilvModeLabel.setText("ILV Mode:");
+
+        utilitiesConfigurationTabGaugePanel1.setPreferredSize(new java.awt.Dimension(476, 133));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -330,56 +333,58 @@ public class Utilities extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(alarmLoudnessLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(o2AlarmLabel)
+                        .addGap(109, 109, 109)
+                        .addComponent(flowCorrectionLabel)
+                        .addGap(142, 142, 142))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(alarmLoudnessLabel)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(languageLabel)
-                                        .addGap(182, 182, 182))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(o2AlarmButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(0, 0, Short.MAX_VALUE)
-                                                .addComponent(o2AlarmLabel)))
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(37, 37, 37)
-                                                .addComponent(flowCorrectionLabel))
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(86, 86, 86)
-                                                .addComponent(flowControlButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(32, 32, 32)
+                                .addComponent(increaseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(219, 219, 219)
+                                .addComponent(decreaseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(ilvModeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(459, 459, 459))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                    .addGap(32, 32, 32)
+                                    .addComponent(ilvModeOnButton, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(ilvModeMasterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(ilvModeSlaveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 326, Short.MAX_VALUE)
+                                .addComponent(o2AlarmButton, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(139, 139, 139)
+                                .addComponent(flowControlButton, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(40, 40, 40))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(294, 294, 294)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(ilvModeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(increaseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(decreaseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(32, 32, 32)
-                                        .addComponent(ilvModeOnButton, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ilvModeMasterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(ilvModeSlaveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(36, 36, 36)))
-                        .addGap(21, 21, 21))
+                                    .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(languageLabel)
+                                        .addGap(100, 100, 100)))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
                         .addComponent(lowVTELabel)
-                        .addGap(92, 92, 92)
-                        .addComponent(increaseFiO2Label)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BigButton, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(40, 40, 40))))
+                        .addGap(128, 128, 128)
+                        .addComponent(increaseFiO2Label))
+                    .addComponent(utilitiesConfigurationTabGaugePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(BigButton, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -389,37 +394,36 @@ public class Utilities extends javax.swing.JPanel {
                     .addComponent(alarmLoudnessLabel)
                     .addComponent(flowCorrectionLabel)
                     .addComponent(o2AlarmLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(15, 15, 15)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(decreaseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(increaseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(o2AlarmButton, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(flowControlButton, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(47, 47, 47)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(decreaseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(flowControlButton, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(o2AlarmButton, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(47, 47, 47)
-                        .addComponent(languageLabel))
-                    .addComponent(increaseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(ilvModeLabel)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(ilvModeMasterButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(ilvModeOnButton, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(ilvModeSlaveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)))
+                            .addComponent(ilvModeSlaveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(ilvModeMasterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(ilvModeOnButton, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(languageLabel)
+                        .addGap(18, 18, 18)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(60, 60, 60)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lowVTELabel)
-                        .addComponent(increaseFiO2Label))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lowVTELabel)
+                            .addComponent(increaseFiO2Label))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(utilitiesConfigurationTabGaugePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(BigButton, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Configuration", jPanel1);
@@ -672,5 +676,6 @@ public class Utilities extends javax.swing.JPanel {
     private javax.swing.JLabel rsOutputLabel;
     private javax.swing.JLabel slaveLabel;
     private javax.swing.JLabel timeLabel;
+    private BreatheEasySim.Components.UtilitiesConfigurationTabGaugePanel utilitiesConfigurationTabGaugePanel1;
     // End of variables declaration//GEN-END:variables
 }
