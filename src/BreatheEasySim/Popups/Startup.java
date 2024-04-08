@@ -15,21 +15,44 @@ public class Startup extends javax.swing.JPanel {
      */
     public Startup() {
         initComponents();
-        /*resumeCurrent.addMouseListener(new java.awt.event.MouseAdapter() {
+        resumeCurrent.addMouseListener(new java.awt.event.MouseAdapter() {
+            int resume = 0;
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
                 System.out.println("resumeCurrent clicked!");
-
-                if(resumeCurrent.getParent().isVisible()){
-                    resumeCurrent.getParent().setVisible(false);
-                } else{
-                    resumeCurrent.getParent().setVisible(true);
+                if (resume == 0) {
+                    System.out.println("ILV Mode Off!");
+                    resumeCurrent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
+                    resumeCurrent.repaint();
+                    resume = 1;
                 }
-                mainScreenPanel3.main1.setVisible(true);
-                mainSidePanel1.mainSide1.setVisible(true);
-                mainBottomPanel1.setVisible(true);
+                else {
+                    System.out.println("ILV Mode On!");
+                    resumeCurrent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
+                    resumeCurrent.repaint();
+                    resume = 0;
+                }
             }
-        });*/
+        });
+        newPatient.addMouseListener(new java.awt.event.MouseAdapter() {
+            int patient = 0;
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent e) {
+                System.out.println("resumeCurrent clicked!");
+                if (patient == 0) {
+                    System.out.println("ILV Mode Off!");
+                    newPatient.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
+                    newPatient.repaint();
+                    patient = 1;
+                }
+                else {
+                    System.out.println("ILV Mode On!");
+                    newPatient.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
+                    newPatient.repaint();
+                    patient = 0;
+                }
+            }
+        });
     }
 
     /**
@@ -104,7 +127,7 @@ public class Startup extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel8;
     private BreatheEasySim.Components.GenericImageLabel newPatient;
-    private BreatheEasySim.Components.GenericImageLabel patientAccept;
+    public BreatheEasySim.Components.GenericImageLabel patientAccept;
     public BreatheEasySim.Components.GenericImageLabel resumeCurrent;
     // End of variables declaration//GEN-END:variables
 }

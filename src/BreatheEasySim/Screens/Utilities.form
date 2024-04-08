@@ -194,9 +194,9 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lowVTELabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="increaseFiO2Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lowVTELabel" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="utilitiesConfigurationTabGaugePanel1" min="-2" max="-2" attributes="0"/>

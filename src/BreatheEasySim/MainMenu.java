@@ -29,15 +29,15 @@ public class MainMenu extends javax.swing.JFrame {
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         getContentPane().setBackground(new Color(40,40,178));
         
-        startup1.resumeCurrent.addMouseListener(new java.awt.event.MouseAdapter() {
+        startup1.patientAccept.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
                 System.out.println("resumeCurrent clicked!");
 
-                if(startup1.resumeCurrent.getParent().isVisible()){
-                    startup1.resumeCurrent.getParent().setVisible(false);
+                if(startup1.patientAccept.getParent().isVisible()){
+                    startup1.patientAccept.getParent().setVisible(false);
                 } else{
-                    startup1.resumeCurrent.getParent().setVisible(true);
+                    startup1.patientAccept.getParent().setVisible(true);
                 }
                 mainScreenPanel3.main1.setVisible(true);
                 mainSidePanel1.setVisible(true);
