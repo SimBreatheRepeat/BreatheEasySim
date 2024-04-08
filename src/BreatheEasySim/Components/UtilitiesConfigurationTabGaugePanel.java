@@ -29,7 +29,7 @@ public class UtilitiesConfigurationTabGaugePanel extends javax.swing.JPanel {
         gauge2 = new BreatheEasySim.Components.Gauge();
         gauge4 = new BreatheEasySim.Components.Gauge();
 
-        setMinimumSize(new java.awt.Dimension(1600, 141));
+        setMinimumSize(new java.awt.Dimension(476, 133));
         setOpaque(false);
         setPreferredSize(new java.awt.Dimension(1600, 141));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
