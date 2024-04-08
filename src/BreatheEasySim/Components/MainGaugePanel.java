@@ -44,7 +44,7 @@ public class MainGaugePanel extends javax.swing.JPanel {
                 gauge1MouseClicked(evt);
             }
         });
-        add(gauge1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1540, 0, 180, 141));
+        add(gauge1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 0, 180, 141));
 
         gauge2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -79,14 +79,14 @@ public class MainGaugePanel extends javax.swing.JPanel {
                 gauge6MouseClicked(evt);
             }
         });
-        add(gauge6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1840, 0, 180, 141));
+        add(gauge6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 0, 180, 141));
 
         gauge7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 gauge7MouseClicked(evt);
             }
         });
-        add(gauge7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1690, 0, 180, 141));
+        add(gauge7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 0, 180, 141));
     }// </editor-fold>//GEN-END:initComponents
 
     private BreatheEasySim.Components.Gauge selectedGauge;

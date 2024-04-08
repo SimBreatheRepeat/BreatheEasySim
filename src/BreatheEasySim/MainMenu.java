@@ -29,6 +29,21 @@ public class MainMenu extends javax.swing.JFrame {
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         getContentPane().setBackground(new Color(40,40,178));
         
+        startup1.resumeCurrent.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent e) {
+                System.out.println("resumeCurrent clicked!");
+
+                if(startup1.resumeCurrent.getParent().isVisible()){
+                    startup1.resumeCurrent.getParent().setVisible(false);
+                } else{
+                    startup1.resumeCurrent.getParent().setVisible(true);
+                }
+                mainScreenPanel3.main1.setVisible(true);
+                mainSidePanel1.setVisible(true);
+                mainBottomPanel1.setVisible(true);
+            }
+        });
         
         mainLabel.addMouseListener(new MouseAdapter(){
             @Override
@@ -83,6 +98,7 @@ public class MainMenu extends javax.swing.JFrame {
 
         mainLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        startup1 = new BreatheEasySim.Popups.Startup();
         screenSelect1 = new BreatheEasySim.Popups.ScreenSelect();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -109,6 +125,7 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel1.setText(" VOLUME A/C");
         jLabel1.setOpaque(true);
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 44));
+        getContentPane().add(startup1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 220, 380, 280));
         getContentPane().add(screenSelect1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 50, 390, 300));
         screenSelect1.setVisible(false);
 
@@ -124,20 +141,16 @@ public class MainMenu extends javax.swing.JFrame {
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 160, 44));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 0, 790, -1));
-
-        mainSidePanel1.setPreferredSize(new java.awt.Dimension(183, 586));
         getContentPane().add(mainSidePanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, -1));
-        mainSidePanel1.mainSide1.setVisible(true);
+        mainSidePanel1.setVisible(false);
 
         getContentPane().add(mainBottomPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 840, 480, 59));
+        mainBottomPanel1.setVisible(false);
 
         mainScreenPanel3.setBackground(new java.awt.Color(40, 40, 178));
-        mainScreenPanel3.setMinimumSize(new java.awt.Dimension(1410, 663));
-        mainScreenPanel3.setPreferredSize(new java.awt.Dimension(1410, 663));
         getContentPane().add(mainScreenPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 1410, 663));
-        mainScreenPanel3.main1.setVisible(true);
+        mainScreenPanel3.main1.setVisible(false);
 
-        mainGaugePanel1.setPreferredSize(new java.awt.Dimension(1600, 141));
         getContentPane().add(mainGaugePanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 710, -1, 130));
 
         getAccessibleContext().setAccessibleParent(this);
@@ -186,11 +199,12 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private BreatheEasySim.Components.MainBottomPanel mainBottomPanel1;
+    public BreatheEasySim.Components.MainBottomPanel mainBottomPanel1;
     private BreatheEasySim.Components.MainGaugePanel mainGaugePanel1;
     private javax.swing.JLabel mainLabel;
-    private BreatheEasySim.Components.MainScreenPanel mainScreenPanel3;
-    private BreatheEasySim.Components.MainSidePanel mainSidePanel1;
+    public BreatheEasySim.Components.MainScreenPanel mainScreenPanel3;
+    public BreatheEasySim.Components.MainSidePanel mainSidePanel1;
     private BreatheEasySim.Popups.ScreenSelect screenSelect1;
+    private BreatheEasySim.Popups.Startup startup1;
     // End of variables declaration//GEN-END:variables
 }

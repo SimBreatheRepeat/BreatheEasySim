@@ -74,6 +74,13 @@
         </Constraint>
       </Constraints>
     </Component>
+    <Component class="BreatheEasySim.Popups.Startup" name="startup1">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="1110" y="220" width="380" height="280"/>
+        </Constraint>
+      </Constraints>
+    </Component>
     <Component class="BreatheEasySim.Popups.ScreenSelect" name="screenSelect1">
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="screenSelect1.setVisible(false);"/>
@@ -124,13 +131,10 @@
       </SubComponents>
     </Container>
     <Component class="BreatheEasySim.Components.MainSidePanel" name="mainSidePanel1">
-      <Properties>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[183, 586]"/>
-        </Property>
-      </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="mainSidePanel1.mainSide1.setVisible(true);"/>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="MainMenu_mainSidePanel1"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+        <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="mainSidePanel1.setVisible(false);"/>
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -139,6 +143,10 @@
       </Constraints>
     </Component>
     <Component class="BreatheEasySim.Components.MainBottomPanel" name="mainBottomPanel1">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+        <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="mainBottomPanel1.setVisible(false);"/>
+      </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="0" y="840" width="480" height="59"/>
@@ -150,15 +158,10 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="b2" green="28" red="28" type="rgb"/>
         </Property>
-        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[1410, 663]"/>
-        </Property>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[1410, 663]"/>
-        </Property>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="mainScreenPanel3.main1.setVisible(true);"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+        <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="mainScreenPanel3.main1.setVisible(false);"/>
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -167,11 +170,6 @@
       </Constraints>
     </Component>
     <Component class="BreatheEasySim.Components.MainGaugePanel" name="mainGaugePanel1">
-      <Properties>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[1600, 141]"/>
-        </Property>
-      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="-10" y="710" width="-1" height="130"/>

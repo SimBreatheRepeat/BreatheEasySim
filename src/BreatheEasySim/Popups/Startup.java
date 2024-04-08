@@ -15,7 +15,7 @@ public class Startup extends javax.swing.JPanel {
      */
     public Startup() {
         initComponents();
-        resumeCurrent.addMouseListener(new java.awt.event.MouseAdapter() {
+        /*resumeCurrent.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
                 System.out.println("resumeCurrent clicked!");
@@ -25,8 +25,11 @@ public class Startup extends javax.swing.JPanel {
                 } else{
                     resumeCurrent.getParent().setVisible(true);
                 }
+                mainScreenPanel3.main1.setVisible(true);
+                mainSidePanel1.mainSide1.setVisible(true);
+                mainBottomPanel1.setVisible(true);
             }
-        });
+        });*/
     }
 
     /**
@@ -102,6 +105,6 @@ public class Startup extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel8;
     private BreatheEasySim.Components.GenericImageLabel newPatient;
     private BreatheEasySim.Components.GenericImageLabel patientAccept;
-    private BreatheEasySim.Components.GenericImageLabel resumeCurrent;
+    public BreatheEasySim.Components.GenericImageLabel resumeCurrent;
     // End of variables declaration//GEN-END:variables
 }
