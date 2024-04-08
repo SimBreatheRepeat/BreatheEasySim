@@ -34,6 +34,9 @@ public class MainGaugePanel extends javax.swing.JPanel {
         gauge6 = new BreatheEasySim.Components.Gauge();
         gauge7 = new BreatheEasySim.Components.Gauge();
 
+        setMinimumSize(new java.awt.Dimension(1600, 141));
+        setOpaque(false);
+        setPreferredSize(new java.awt.Dimension(1600, 141));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         gauge1.addMouseListener(new java.awt.event.MouseAdapter() {

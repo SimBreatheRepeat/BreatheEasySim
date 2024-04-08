@@ -89,6 +89,7 @@ public class MainMenu extends javax.swing.JFrame {
         mainSidePanel1 = new BreatheEasySim.Components.MainSidePanel();
         mainBottomPanel1 = new BreatheEasySim.Components.MainBottomPanel();
         mainScreenPanel3 = new BreatheEasySim.Components.MainScreenPanel();
+        mainGaugePanel1 = new BreatheEasySim.Components.MainGaugePanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(45, 50, 79));
@@ -100,15 +101,15 @@ public class MainMenu extends javax.swing.JFrame {
         mainLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         mainLabel.setText("MAIN");
         mainLabel.setOpaque(true);
-        getContentPane().add(mainLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 0, 180, 44));
+        getContentPane().add(mainLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 0, 110, 44));
 
         jLabel1.setBackground(new java.awt.Color(102, 102, 255));
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText(" VOLUME A/C");
         jLabel1.setOpaque(true);
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 970, 44));
-        getContentPane().add(screenSelect1, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 50, 390, 300));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 44));
+        getContentPane().add(screenSelect1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 50, 390, 300));
         screenSelect1.setVisible(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 51, 51));
@@ -122,16 +123,22 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel2.setOpaque(true);
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 160, 44));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1138, 0, 790, -1));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 0, 790, -1));
+
+        mainSidePanel1.setPreferredSize(new java.awt.Dimension(183, 586));
         getContentPane().add(mainSidePanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, -1));
         mainSidePanel1.mainSide1.setVisible(true);
 
-        getContentPane().add(mainBottomPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 1020, 580, 60));
+        getContentPane().add(mainBottomPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 840, 480, 59));
 
         mainScreenPanel3.setBackground(new java.awt.Color(40, 40, 178));
-        mainScreenPanel3.setPreferredSize(new java.awt.Dimension(889, 425));
-        getContentPane().add(mainScreenPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 1710, 790));
+        mainScreenPanel3.setMinimumSize(new java.awt.Dimension(1410, 663));
+        mainScreenPanel3.setPreferredSize(new java.awt.Dimension(1410, 663));
+        getContentPane().add(mainScreenPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 1410, 663));
         mainScreenPanel3.main1.setVisible(true);
+
+        mainGaugePanel1.setPreferredSize(new java.awt.Dimension(1600, 141));
+        getContentPane().add(mainGaugePanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 710, -1, 130));
 
         getAccessibleContext().setAccessibleParent(this);
 
@@ -180,6 +187,7 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private BreatheEasySim.Components.MainBottomPanel mainBottomPanel1;
+    private BreatheEasySim.Components.MainGaugePanel mainGaugePanel1;
     private javax.swing.JLabel mainLabel;
     private BreatheEasySim.Components.MainScreenPanel mainScreenPanel3;
     private BreatheEasySim.Components.MainSidePanel mainSidePanel1;

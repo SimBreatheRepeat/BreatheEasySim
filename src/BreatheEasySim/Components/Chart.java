@@ -60,7 +60,7 @@ public class Chart extends JPanel {
 
         // Create a chart panel and add it to this JPanel
         ChartPanel chartPanel = new ChartPanel(chart);
-        chartPanel.setPreferredSize(new Dimension(900, 200)); // Set preferred size
+        chartPanel.setPreferredSize(new Dimension(1367, 200)); // Set preferred size
         chartPanel.setOpaque(false);
         add(chartPanel);
     }

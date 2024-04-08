@@ -36,12 +36,10 @@ public class MainScreenPanel extends javax.swing.JPanel {
         utilities = new BreatheEasySim.Screens.Utilities();
         main1 = new BreatheEasySim.Screens.Main();
 
-        setPreferredSize(new java.awt.Dimension(1710, 790));
+        setPreferredSize(new java.awt.Dimension(1410, 663));
 
         jLayeredPane1.setOpaque(true);
-        jLayeredPane1.setPreferredSize(new java.awt.Dimension(1710, 790));
-
-        utilities.setPreferredSize(new java.awt.Dimension(1710, 790));
+        jLayeredPane1.setPreferredSize(new java.awt.Dimension(1410, 663));
 
         jLayeredPane1.setLayer(utilities, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(main1, javax.swing.JLayeredPane.DEFAULT_LAYER);
