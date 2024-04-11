@@ -37,10 +37,19 @@ public class UtilitiesDateTabGaugePanel extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1600, 141));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         add(gauge2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 180, 141));
+        gauge2.jLabel4.setText("Month");
+
         add(gauge3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 180, 141));
+        gauge3.jLabel4.setText("Day");
+
         add(gauge4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 0, 180, 141));
+        gauge4.jLabel4.setText("Year");
+
         add(gauge8, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 0, 180, 141));
+        gauge8.jLabel4.setText("Minute");
+
         add(gauge9, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 0, 180, 141));
+        gauge9.jLabel4.setText("Hour");
     }// </editor-fold>//GEN-END:initComponents
 
 

@@ -45,7 +45,8 @@ public class Gauge extends javax.swing.JPanel {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Name");
-        label.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 150, 30));
+        jLabel4.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        label.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -2, 150, 40));
 
         add(label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 150, 110));
 
@@ -81,7 +82,7 @@ public class Gauge extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private BreatheEasySim.Components.GenericGauge genericGauge;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
+    public javax.swing.JLabel jLabel4;
     private BreatheEasySim.Components.GenericImageLabel label;
     // End of variables declaration//GEN-END:variables
 

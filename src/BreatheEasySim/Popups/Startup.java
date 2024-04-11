@@ -93,31 +93,34 @@ public class Startup extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("<html><body style='text-align: center'>Resume<br>Current</html>");
         resumeCurrent.add(jLabel3);
-        jLabel3.setBounds(34, 18, 42, 30);
+        jLabel3.setBounds(4, 18, 100, 30);
 
         add(resumeCurrent, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 64, 109, 67));
 
         patientAccept.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("<html><body style='text-align: center'>Patient<br>Accept</html>");
         patientAccept.add(jLabel2);
-        jLabel2.setBounds(35, 18, 42, 30);
+        jLabel2.setBounds(4, 18, 100, 30);
 
         add(patientAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 203, 109, 67));
 
         newPatient.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png"))); // NOI18N
 
-        jLabel8.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("<html><body style='text-align: center'>New<br>Patient</html>");
         newPatient.add(jLabel8);
-        jLabel8.setBounds(35, 18, 42, 30);
+        jLabel8.setBounds(4, 18, 100, 30);
 
         add(newPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 64, 109, 67));
     }// </editor-fold>//GEN-END:initComponents

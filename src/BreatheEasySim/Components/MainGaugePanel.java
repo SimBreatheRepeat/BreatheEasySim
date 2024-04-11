@@ -46,6 +46,7 @@ public class MainGaugePanel extends javax.swing.JPanel {
             }
         });
         add(gauge1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 0, 180, 141));
+        gauge1.jLabel4.setText("<html><body style='text-align: center'>cmH2O<br>PEEP</html>");
 
         gauge2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -53,6 +54,7 @@ public class MainGaugePanel extends javax.swing.JPanel {
             }
         });
         add(gauge2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 180, 141));
+        gauge2.jLabel4.setText("<html><body style='text-align: center'>bpm<br>Rate</html>");
 
         gauge3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -60,6 +62,7 @@ public class MainGaugePanel extends javax.swing.JPanel {
             }
         });
         add(gauge3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 180, 141));
+        gauge3.jLabel4.setText("<html><body style='text-align: center'>L<br>Volume</html>");
 
         gauge4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -67,6 +70,7 @@ public class MainGaugePanel extends javax.swing.JPanel {
             }
         });
         add(gauge4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 0, 180, 141));
+        gauge4.jLabel4.setText("<html><body style='text-align: center'>L/min<br>Peak Flow</html>");
 
         gauge5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -74,6 +78,7 @@ public class MainGaugePanel extends javax.swing.JPanel {
             }
         });
         add(gauge5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 0, 180, 141));
+        gauge5.jLabel4.setText("<html><body style='text-align: center'>sec<br>Insp Pause</html>");
 
         gauge6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -81,6 +86,7 @@ public class MainGaugePanel extends javax.swing.JPanel {
             }
         });
         add(gauge6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 0, 180, 141));
+        gauge6.jLabel4.setText("<html><body style='text-align: center'>%<br>FiO2</html>");
 
         gauge7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -88,6 +94,7 @@ public class MainGaugePanel extends javax.swing.JPanel {
             }
         });
         add(gauge7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 0, 180, 141));
+        gauge7.jLabel4.setText("<html><body style='text-align: center'>L/min<br>Flow Trig</html>");
     }// </editor-fold>//GEN-END:initComponents
 
     private BreatheEasySim.Components.Gauge selectedGauge;
