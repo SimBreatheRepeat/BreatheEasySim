@@ -39,6 +39,7 @@ public class MainGaugePanel extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1600, 141));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        gauge1.setName(""); // NOI18N
         gauge1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 gauge1MouseClicked(evt);

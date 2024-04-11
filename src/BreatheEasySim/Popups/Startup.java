@@ -9,14 +9,14 @@ package BreatheEasySim.Popups;
  * @author calebgomez
  */
 public class Startup extends javax.swing.JPanel {
-
+    public int resume = 0;
+    public int patient = 0;
     /**
      * Creates new form Startup
      */
     public Startup() {
         initComponents();
         resumeCurrent.addMouseListener(new java.awt.event.MouseAdapter() {
-            int resume = 0;
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
                 System.out.println("resumeCurrent clicked!");
@@ -24,7 +24,10 @@ public class Startup extends javax.swing.JPanel {
                     System.out.println("ILV Mode Off!");
                     resumeCurrent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
                     resumeCurrent.repaint();
+                    newPatient.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
+                    newPatient.repaint();
                     resume = 1;
+                    patient = 0;
                 }
                 else {
                     System.out.println("ILV Mode On!");
@@ -35,7 +38,6 @@ public class Startup extends javax.swing.JPanel {
             }
         });
         newPatient.addMouseListener(new java.awt.event.MouseAdapter() {
-            int patient = 0;
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
                 System.out.println("resumeCurrent clicked!");
@@ -43,6 +45,9 @@ public class Startup extends javax.swing.JPanel {
                     System.out.println("ILV Mode Off!");
                     newPatient.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
                     newPatient.repaint();
+                    resumeCurrent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
+                    resumeCurrent.repaint();
+                    resume = 0;
                     patient = 1;
                 }
                 else {

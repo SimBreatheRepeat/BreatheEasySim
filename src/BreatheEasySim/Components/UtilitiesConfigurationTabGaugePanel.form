@@ -35,6 +35,9 @@
       </Constraints>
     </Component>
     <Component class="BreatheEasySim.Components.Gauge" name="gauge4">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="" noResource="true"/>
+      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="280" y="0" width="180" height="141"/>

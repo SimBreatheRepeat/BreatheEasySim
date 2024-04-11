@@ -34,6 +34,8 @@ public class UtilitiesConfigurationTabGaugePanel extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1600, 141));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         add(gauge2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 180, 141));
+
+        gauge4.setName(""); // NOI18N
         add(gauge4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 0, 180, 141));
     }// </editor-fold>//GEN-END:initComponents
 

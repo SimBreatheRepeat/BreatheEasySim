@@ -33,28 +33,34 @@ public class MainMenu extends javax.swing.JFrame {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
                 System.out.println("resumeCurrent clicked!");
-
-                if(startup1.patientAccept.getParent().isVisible()){
-                    startup1.patientAccept.getParent().setVisible(false);
-                } else{
-                    startup1.patientAccept.getParent().setVisible(true);
+                
+                if(startup1.resume == 1 || startup1.patient == 1){
+                    if(startup1.patientAccept.getParent().isVisible()){
+                        startup1.patientAccept.getParent().setVisible(false);
+                    } else{
+                        startup1.patientAccept.getParent().setVisible(true);
+                    }
+                    mainScreenPanel3.main1.setVisible(true);
+                    mainSidePanel1.setVisible(true);
+                    mainBottomPanel1.setVisible(true);
+                    mainGaugePanel1.setEnabled(true);
                 }
-                mainScreenPanel3.main1.setVisible(true);
-                mainSidePanel1.setVisible(true);
-                mainBottomPanel1.setVisible(true);
             }
         });
         
         mainLabel.addMouseListener(new MouseAdapter(){
             @Override
             public void mouseClicked(MouseEvent m){
-                if(screenSelect1.isVisible()){
+                if(!startup1.patientAccept.getParent().isVisible())
+                {
+                    if(screenSelect1.isVisible()){
                     screenSelect1.setVisible(false);
+                    }
+                    else{
+                        screenSelect1.setVisible(true);
+                    } 
+                    System.out.println("Main Label Clicked!");
                 }
-                else{
-                    screenSelect1.setVisible(true);
-                } 
-                System.out.println("Main Label Clicked!");
             }
         });
         screenSelect1.utilities.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -152,6 +158,7 @@ public class MainMenu extends javax.swing.JFrame {
         mainScreenPanel3.main1.setVisible(false);
 
         getContentPane().add(mainGaugePanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 710, -1, 130));
+        mainGaugePanel1.setEnabled(false);
 
         getAccessibleContext().setAccessibleParent(this);
 

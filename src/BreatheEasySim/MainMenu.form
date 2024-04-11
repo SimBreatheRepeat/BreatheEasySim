@@ -170,6 +170,9 @@
       </Constraints>
     </Component>
     <Component class="BreatheEasySim.Components.MainGaugePanel" name="mainGaugePanel1">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="mainGaugePanel1.setEnabled(false);"/>
+      </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="-10" y="710" width="-1" height="130"/>
