@@ -4,6 +4,12 @@
  */
 package BreatheEasySim.Components;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author kyleh
@@ -46,7 +52,10 @@ public class MainGaugePanel extends javax.swing.JPanel {
             }
         });
         add(gauge1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 0, 180, 141));
+<<<<<<< HEAD
         gauge1.jLabel4.setText("<html><body style='text-align: center'>cmH2O<br>PEEP</html>");
+=======
+>>>>>>> e901efd (Began work on Encoder Translation)
 
         gauge2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -86,7 +95,10 @@ public class MainGaugePanel extends javax.swing.JPanel {
             }
         });
         add(gauge6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 0, 180, 141));
+<<<<<<< HEAD
         gauge6.jLabel4.setText("<html><body style='text-align: center'>%<br>FiO2</html>");
+=======
+>>>>>>> e901efd (Began work on Encoder Translation)
 
         gauge7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -94,54 +106,195 @@ public class MainGaugePanel extends javax.swing.JPanel {
             }
         });
         add(gauge7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 0, 180, 141));
+<<<<<<< HEAD
         gauge7.jLabel4.setText("<html><body style='text-align: center'>L/min<br>Flow Trig</html>");
+=======
+>>>>>>> e901efd (Began work on Encoder Translation)
     }// </editor-fold>//GEN-END:initComponents
 
     private BreatheEasySim.Components.Gauge selectedGauge;
     
-    private void anyGaugeMouseClicked(java.awt.event.MouseEvent evt) {
+    private void anyGaugeMouseClicked(java.awt.event.MouseEvent evt) throws IOException {
         // Get the source of the click event (the gauge that was clicked)
         Object source = evt.getSource();
 
         // Check if the source is a BreatheEasySim.Components.Gauge object
         if (source instanceof BreatheEasySim.Components.Gauge) {
           selectedGauge = (BreatheEasySim.Components.Gauge) source;
+          BreatheEasySim.Components.Gauge prevselectedGauge = selectedGauge;
+          
+          System.out.println(System.getProperty("user.dir"));
+        
+            ProcessBuilder processBuilder = new ProcessBuilder("python", "rotary_encoder.py");
+            Process proc = processBuilder.start();
+
+            BufferedReader stdInput = new BufferedReader(new InputStreamReader(proc.getInputStream()));
+
+            // Read the output from the command
+            String s = null;
+            String first = stdInput.readLine();
+
+            while ((s = stdInput.readLine()) != null && source.equals(prevselectedGauge)) {
+                System.out.println(s);
+                System.out.println("First: " + first);
+            }
+            proc.destroy();
         }
     }
     
     
     private void gauge2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge2MouseClicked
-        anyGaugeMouseClicked(evt);
+        // Create a new thread
+        Thread parallelThread = new Thread(() -> {
+            try {
+                // Your parallel process logic here
+                anyGaugeMouseClicked(evt);
+                System.out.println("Parallel process started!");
+                System.out.println("Parallel process completed!");
+            } catch (IOException ex) {
+                Logger.getLogger(MainGaugePanel.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        });
+        // Start the thread
+        parallelThread.start();
         System.out.println(selectedGauge);
     }//GEN-LAST:event_gauge2MouseClicked
 
     private void gauge1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge1MouseClicked
-        anyGaugeMouseClicked(evt);
+        Thread parallelThread = new Thread(() -> {
+            try {
+                // Your parallel process logic here                anyGaugeMouseClicked(evt);
+
+                anyGaugeMouseClicked(evt);
+                System.out.println("Parallel process started!");
+                // Simulate some work
+                try {
+                    Thread.sleep(2000); // Sleep for 2 seconds
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+                System.out.println("Parallel process completed!");
+            } catch (IOException ex) {
+                Logger.getLogger(MainGaugePanel.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        });
+        // Start the thread
+        parallelThread.start();
         System.out.println(selectedGauge);
     }//GEN-LAST:event_gauge1MouseClicked
 
     private void gauge3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge3MouseClicked
-        anyGaugeMouseClicked(evt);
+        Thread parallelThread = new Thread(() -> {
+            try {
+                // Your parallel process logic here                anyGaugeMouseClicked(evt);
+
+                anyGaugeMouseClicked(evt);
+                System.out.println("Parallel process started!");
+                // Simulate some work
+                try {
+                    Thread.sleep(2000); // Sleep for 2 seconds
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+                System.out.println("Parallel process completed!");
+            } catch (IOException ex) {
+                Logger.getLogger(MainGaugePanel.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        });
+        // Start the thread
+        parallelThread.start();
         System.out.println(selectedGauge);
     }//GEN-LAST:event_gauge3MouseClicked
 
     private void gauge4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge4MouseClicked
-        anyGaugeMouseClicked(evt);
+        Thread parallelThread = new Thread(() -> {
+            try {
+                // Your parallel process logic here                anyGaugeMouseClicked(evt);
+
+                anyGaugeMouseClicked(evt);
+                System.out.println("Parallel process started!");
+                // Simulate some work
+                try {
+                    Thread.sleep(2000); // Sleep for 2 seconds
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+                System.out.println("Parallel process completed!");
+            } catch (IOException ex) {
+                Logger.getLogger(MainGaugePanel.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        });
+        // Start the thread
+        parallelThread.start();
         System.out.println(selectedGauge);
     }//GEN-LAST:event_gauge4MouseClicked
 
     private void gauge5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge5MouseClicked
-        anyGaugeMouseClicked(evt);
+        Thread parallelThread = new Thread(() -> {
+            try {
+                // Your parallel process logic here                anyGaugeMouseClicked(evt);
+
+                anyGaugeMouseClicked(evt);
+                System.out.println("Parallel process started!");
+                // Simulate some work
+                try {
+                    Thread.sleep(2000); // Sleep for 2 seconds
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+                System.out.println("Parallel process completed!");
+            } catch (IOException ex) {
+                Logger.getLogger(MainGaugePanel.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        });
+        // Start the thread
+        parallelThread.start();
         System.out.println(selectedGauge);
     }//GEN-LAST:event_gauge5MouseClicked
 
     private void gauge6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge6MouseClicked
-        anyGaugeMouseClicked(evt);
+        Thread parallelThread = new Thread(() -> {
+            try {
+                // Your parallel process logic here                anyGaugeMouseClicked(evt);
+
+                anyGaugeMouseClicked(evt);
+                System.out.println("Parallel process started!");
+                // Simulate some work
+                try {
+                    Thread.sleep(2000); // Sleep for 2 seconds
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+                System.out.println("Parallel process completed!");
+            } catch (IOException ex) {
+                Logger.getLogger(MainGaugePanel.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        });
+        // Start the thread
+        parallelThread.start();
         System.out.println(selectedGauge);
     }//GEN-LAST:event_gauge6MouseClicked
 
     private void gauge7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge7MouseClicked
-        anyGaugeMouseClicked(evt);
+        Thread parallelThread = new Thread(() -> {
+            try {
+                // Your parallel process logic here                anyGaugeMouseClicked(evt);
+
+                anyGaugeMouseClicked(evt);
+                System.out.println("Parallel process started!");
+                // Simulate some work
+                try {
+                    Thread.sleep(2000); // Sleep for 2 seconds
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+                System.out.println("Parallel process completed!");
+            } catch (IOException ex) {
+                Logger.getLogger(MainGaugePanel.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        });
+        // Start the thread
+        parallelThread.start();
         System.out.println(selectedGauge);
     }//GEN-LAST:event_gauge7MouseClicked
 
