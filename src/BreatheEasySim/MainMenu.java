@@ -46,6 +46,18 @@ public class MainMenu extends javax.swing.JFrame {
                     mainGaugePanel1.setEnabled(true);
                 }
             }
+            @Override
+            public void mousePressed(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Pressed!");
+                startup1.patientAccept.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
+                startup1.patientAccept.repaint();
+            }
+            @Override
+            public void mouseReleased(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Released!");
+                startup1.patientAccept.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
+                startup1.patientAccept.repaint();
+            }
         });
         
         mainLabel.addMouseListener(new MouseAdapter(){
@@ -75,6 +87,18 @@ public class MainMenu extends javax.swing.JFrame {
                 mainLabel.setText("UTILITY");
                 
             }
+            @Override
+            public void mousePressed(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Pressed!");
+                screenSelect1.utilities.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
+                screenSelect1.utilities.repaint();
+            }
+            @Override
+            public void mouseReleased(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Released!");
+                screenSelect1.utilities.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
+                screenSelect1.utilities.repaint();
+            }
         });
         screenSelect1.main.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
@@ -85,8 +109,19 @@ public class MainMenu extends javax.swing.JFrame {
                 mainSidePanel1.mainSide1.setVisible(true);
                 mainScreenPanel3.utilities.setVisible(false);
                 mainSidePanel1.utilitiesSide1.setVisible(false);
-                mainLabel.setText("MAIN");
-                
+                mainLabel.setText("MAIN");  
+            }
+            @Override
+            public void mousePressed(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Pressed!");
+                screenSelect1.main.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
+                screenSelect1.main.repaint();
+            }
+            @Override
+            public void mouseReleased(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Released!");
+                screenSelect1.main.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
+                screenSelect1.main.repaint();
             }
         });
     }

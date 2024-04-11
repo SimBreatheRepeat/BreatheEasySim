@@ -13,14 +13,77 @@ public class ScreenSelect extends javax.swing.JPanel {
 
     public ScreenSelect() {
         initComponents();
-        /*utilities.addMouseListener(new java.awt.event.MouseAdapter() {
+        loop.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
-            public void mouseClicked(java.awt.event.MouseEvent e) {
-                System.out.println("Utilities Button Pressed!");
-                utilities.getParent().setVisible(false);
-                
+            public void mousePressed(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Pressed!");
+                loop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
+                loop.repaint();
             }
-        });*/
+            @Override
+            public void mouseReleased(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Released!");
+                loop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
+                loop.repaint();
+            }
+        });
+        maneuver.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mousePressed(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Pressed!");
+                maneuver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
+                maneuver.repaint();
+            }
+            @Override
+            public void mouseReleased(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Released!");
+                maneuver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
+                maneuver.repaint();
+            }
+        });
+        monitor.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mousePressed(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Pressed!");
+                monitor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
+                monitor.repaint();
+            }
+            @Override
+            public void mouseReleased(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Released!");
+                monitor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
+                monitor.repaint();
+            }
+        });
+        standby.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mousePressed(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Pressed!");
+                standby.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
+                standby.repaint();
+            }
+            @Override
+            public void mouseReleased(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Released!");
+                standby.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
+                standby.repaint();
+            }
+        });
+        trends.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mousePressed(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Pressed!");
+                trends.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
+                trends.repaint();
+            }
+            @Override
+            public void mouseReleased(java.awt.event.MouseEvent e) {
+                System.out.println("loop Button Released!");
+                trends.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
+                trends.repaint();
+            }
+        });
+        
     }
 
     /**
