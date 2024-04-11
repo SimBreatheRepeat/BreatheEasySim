@@ -48,6 +48,9 @@
         <Property name="text" type="java.lang.String" value="MAIN"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="10"/>
+      </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="800" y="0" width="110" height="44"/>
@@ -83,6 +86,7 @@
     </Component>
     <Component class="BreatheEasySim.Popups.ScreenSelect" name="screenSelect1">
       <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="10"/>
         <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="screenSelect1.setVisible(false);"/>
       </AuxValues>
       <Constraints>

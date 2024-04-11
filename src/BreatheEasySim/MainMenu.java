@@ -8,6 +8,9 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.*;
 import java.awt.Toolkit;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import javax.swing.JFrame;
 
 /**
@@ -19,6 +22,7 @@ public class MainMenu extends javax.swing.JFrame {
     /**
      * Creates new form MainMenu
      */
+    
     public MainMenu() {
         /*GraphicsEnvironment graphics =
         GraphicsEnvironment.getLocalGraphicsEnvironment();
@@ -167,7 +171,7 @@ public class MainMenu extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[]) throws IOException {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -199,7 +203,53 @@ public class MainMenu extends javax.swing.JFrame {
         });
         
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        System.out.printf("%f, %f", screenSize.getHeight(), screenSize.getWidth());
+        System.out.printf("%f, %f", screenSize.getWidth(), screenSize.getHeight());
+        System.out.println(System.getProperty("user.dir"));
+        
+        ProcessBuilder processBuilder = new ProcessBuilder("python", "middleware.py");
+        Process proc = processBuilder.start();
+
+        BufferedReader stdInput = new BufferedReader(new InputStreamReader(proc.getInputStream()));
+
+        // Read the output from the command
+        String s = null;
+        while ((s = stdInput.readLine()) != null) {
+            System.out.println(s);
+            
+            if(s.equals("Home")) {
+                System.out.println("Executing Home");
+                screenSelect1.main.getParent().setVisible(false);
+                mainScreenPanel3.main1.setVisible(true);
+                mainSidePanel1.mainSide1.setVisible(true);
+                mainScreenPanel3.utilities.setVisible(false);
+                mainSidePanel1.utilitiesSide1.setVisible(false);
+                mainLabel.setText("MAIN");
+            }
+            if(s.equals("Screens")) {
+                System.out.println("Executing Screens");
+                if(screenSelect1.isVisible()){
+                    screenSelect1.setVisible(false);
+                }
+                else{
+                    screenSelect1.setVisible(true);
+                } 
+            }
+            if(s.equals("Mode")) {
+                System.out.println("Executing Mode");
+            }
+            if(s.equals("Alarm On/Off")) {
+                System.out.println("Executing Alarm On/Off");
+            }
+            if(s.equals("Freeze")) {
+                System.out.println("Executing Freeze");
+            }
+            if(s.equals("Pump On/Off")) {
+                System.out.println("Executing Pump On/Off");
+            }
+            if(s.equals("Accept")) {
+                System.out.println("Executing Accept");
+            }
+        }
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
