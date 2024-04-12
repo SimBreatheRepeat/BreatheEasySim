@@ -13,7 +13,7 @@ public class ScreenSelect extends javax.swing.JPanel {
 
     public ScreenSelect() {
         initComponents();
-        loop.addMouseListener(new java.awt.event.MouseAdapter() {
+        /*loop.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mousePressed(java.awt.event.MouseEvent e) {
                 System.out.println("loop Button Pressed!");
@@ -82,7 +82,7 @@ public class ScreenSelect extends javax.swing.JPanel {
                 trends.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
                 trends.repaint();
             }
-        });
+        });*/
         
     }
 

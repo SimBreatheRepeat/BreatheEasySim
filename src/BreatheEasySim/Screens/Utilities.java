@@ -71,7 +71,7 @@ public class Utilities extends javax.swing.JPanel {
             public void mouseClicked(java.awt.event.MouseEvent e) {
                     System.out.println("analogInputButton1 Clicked!");
             }
-            @Override
+           /* @Override
             public void mousePressed(java.awt.event.MouseEvent e) {
                 System.out.println("loop Button Pressed!");
                 analogInputButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
@@ -82,7 +82,7 @@ public class Utilities extends javax.swing.JPanel {
                 System.out.println("loop Button Released!");
                 analogInputButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
                 analogInputButton1.repaint();
-            }
+            } */
         });
         
         analogInputButton2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -90,7 +90,7 @@ public class Utilities extends javax.swing.JPanel {
             public void mouseClicked(java.awt.event.MouseEvent e) {
                     System.out.println("analogInputButton2 Clicked!");
             }
-            @Override
+           /* @Override
             public void mousePressed(java.awt.event.MouseEvent e) {
                 System.out.println("loop Button Pressed!");
                 analogInputButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
@@ -101,14 +101,14 @@ public class Utilities extends javax.swing.JPanel {
                 System.out.println("loop Button Released!");
                 analogInputButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
                 analogInputButton2.repaint();
-            }
+            } */
         });
          analogOutputButton.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
                     System.out.println("analogOutputButton Clicked!");
             }
-            @Override
+            /*@Override
             public void mousePressed(java.awt.event.MouseEvent e) {
                 System.out.println("loop Button Pressed!");
                 analogOutputButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
@@ -119,7 +119,7 @@ public class Utilities extends javax.swing.JPanel {
                 System.out.println("loop Button Released!");
                 analogOutputButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
                 analogOutputButton.repaint();
-            }
+            }*/
         });
          
         flowControlButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -127,7 +127,7 @@ public class Utilities extends javax.swing.JPanel {
             public void mouseClicked(java.awt.event.MouseEvent e) {
                     System.out.println("flowControlButton Clicked!");
             }
-            @Override
+            /*@Override
             public void mousePressed(java.awt.event.MouseEvent e) {
                 System.out.println("loop Button Pressed!");
                 flowControlButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
@@ -138,14 +138,14 @@ public class Utilities extends javax.swing.JPanel {
                 System.out.println("loop Button Released!");
                 flowControlButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
                 flowControlButton.repaint();
-            }
+            }*/
         });
         decreaseButton.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
                     System.out.println("decreaseButton Clicked!");
             }
-            @Override
+           /* @Override
             public void mousePressed(java.awt.event.MouseEvent e) {
                 System.out.println("loop Button Pressed!");
                 decreaseButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
@@ -156,7 +156,7 @@ public class Utilities extends javax.swing.JPanel {
                 System.out.println("loop Button Released!");
                 decreaseButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
                 decreaseButton.repaint();
-            }
+            } */
         });
         
         hotWireFlowButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -164,7 +164,7 @@ public class Utilities extends javax.swing.JPanel {
             public void mouseClicked(java.awt.event.MouseEvent e) {
                     System.out.println("hotWireFlowButton Clicked!");
             }
-            @Override
+            /*@Override
             public void mousePressed(java.awt.event.MouseEvent e) {
                 System.out.println("loop Button Pressed!");
                 hotWireFlowButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
@@ -175,7 +175,7 @@ public class Utilities extends javax.swing.JPanel {
                 System.out.println("loop Button Released!");
                 hotWireFlowButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
                 hotWireFlowButton.repaint();
-            }
+            }*/
         });
         
         increaseButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -183,7 +183,7 @@ public class Utilities extends javax.swing.JPanel {
             public void mouseClicked(java.awt.event.MouseEvent e) {
                     System.out.println("increaseButton Clicked!");
             }
-            @Override
+            /*@Override
             public void mousePressed(java.awt.event.MouseEvent e) {
                 System.out.println("loop Button Pressed!");
                 increaseButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
@@ -194,7 +194,7 @@ public class Utilities extends javax.swing.JPanel {
                 System.out.println("loop Button Released!");
                 increaseButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
                 increaseButton.repaint();
-            }
+            }*/
         });
         
         ilvModeMasterButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -202,7 +202,7 @@ public class Utilities extends javax.swing.JPanel {
             public void mouseClicked(java.awt.event.MouseEvent e) {
                     System.out.println("ilvModeMasterButton Clicked!");
             }
-            @Override
+            /*@Override
             public void mousePressed(java.awt.event.MouseEvent e) {
                 System.out.println("loop Button Pressed!");
                 ilvModeMasterButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
@@ -213,7 +213,7 @@ public class Utilities extends javax.swing.JPanel {
                 System.out.println("loop Button Released!");
                 ilvModeMasterButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
                 ilvModeMasterButton.repaint();
-            }
+            }*/
         });
         
         ilvModeSlaveButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -221,7 +221,7 @@ public class Utilities extends javax.swing.JPanel {
             public void mouseClicked(java.awt.event.MouseEvent e) {
                     System.out.println("ilvModeSlaveButton Clicked!");
             }
-            @Override
+            /*@Override
             public void mousePressed(java.awt.event.MouseEvent e) {
                 System.out.println("loop Button Pressed!");
                 ilvModeSlaveButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
@@ -232,7 +232,7 @@ public class Utilities extends javax.swing.JPanel {
                 System.out.println("loop Button Released!");
                 ilvModeSlaveButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
                 ilvModeSlaveButton.repaint();
-            }
+            }*/
         });
     }
 

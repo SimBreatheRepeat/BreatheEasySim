@@ -46,18 +46,6 @@ public class MainMenu extends javax.swing.JFrame {
                     mainGaugePanel1.setEnabled(true);
                 }
             }
-            @Override
-            public void mousePressed(java.awt.event.MouseEvent e) {
-                System.out.println("loop Button Pressed!");
-                startup1.patientAccept.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button OnClick.png")));
-                startup1.patientAccept.repaint();
-            }
-            @Override
-            public void mouseReleased(java.awt.event.MouseEvent e) {
-                System.out.println("loop Button Released!");
-                startup1.patientAccept.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BreatheEasySim/Images/Button.png")));
-                startup1.patientAccept.repaint();
-            }
         });
         
         mainLabel.addMouseListener(new MouseAdapter(){
