@@ -137,7 +137,7 @@
     <Component class="BreatheEasySim.Components.MainSidePanel" name="mainSidePanel1">
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="MainMenu_mainSidePanel1"/>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
         <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="mainSidePanel1.setVisible(false);"/>
       </AuxValues>
       <Constraints>
@@ -164,7 +164,7 @@
         </Property>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
         <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="mainScreenPanel3.main1.setVisible(false);"/>
       </AuxValues>
       <Constraints>

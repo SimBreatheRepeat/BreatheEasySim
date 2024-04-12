@@ -257,10 +257,10 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     public BreatheEasySim.Components.MainBottomPanel mainBottomPanel1;
     private BreatheEasySim.Components.MainGaugePanel mainGaugePanel1;
-    private javax.swing.JLabel mainLabel;
-    public BreatheEasySim.Components.MainScreenPanel mainScreenPanel3;
-    public BreatheEasySim.Components.MainSidePanel mainSidePanel1;
-    private BreatheEasySim.Popups.ScreenSelect screenSelect1;
+    private static javax.swing.JLabel mainLabel;
+    public static BreatheEasySim.Components.MainScreenPanel mainScreenPanel3;
+    public static BreatheEasySim.Components.MainSidePanel mainSidePanel1;
+    private static BreatheEasySim.Popups.ScreenSelect screenSelect1;
     private BreatheEasySim.Popups.Startup startup1;
     // End of variables declaration//GEN-END:variables
 }
