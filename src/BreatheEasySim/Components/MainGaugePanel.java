@@ -113,6 +113,8 @@ public class MainGaugePanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private BreatheEasySim.Components.Gauge selectedGauge;
+    private volatile boolean shouldContinue = true;
+    private volatile Thread parallelThread;
     
     private void anyGaugeMouseClicked(java.awt.event.MouseEvent evt) throws IOException {
         // Get the source of the click event (the gauge that was clicked)
@@ -137,6 +139,7 @@ public class MainGaugePanel extends javax.swing.JPanel {
             while ((s = stdInput.readLine()) != null && source.equals(prevselectedGauge)) {
                 System.out.println(s);
                 System.out.println("First: " + first);
+                selectedGauge.changeValue(Integer.parseInt(s));
             }
             proc.destroy();
         }
@@ -144,15 +147,33 @@ public class MainGaugePanel extends javax.swing.JPanel {
     
     
     private void gauge2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge2MouseClicked
-        // Create a new thread
+        // Check if there's an existing thread and interrupt it
+        if (parallelThread != null && parallelThread.isAlive()) {
+            shouldContinue = false; // Set the flag to false to stop the thread
+            parallelThread.interrupt(); // Interrupt the thread to stop its execution
+        }
+        
         Thread parallelThread = new Thread(() -> {
             try {
-                // Your parallel process logic here
+                // Your parallel process logic here                anyGaugeMouseClicked(evt);
+
                 anyGaugeMouseClicked(evt);
                 System.out.println("Parallel process started!");
+                // Simulate some work
+                while(shouldContinue){
+                    try {
+                        Thread.sleep(2000); // Sleep for 2 seconds
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    }
+                }
                 System.out.println("Parallel process completed!");
             } catch (IOException ex) {
-                Logger.getLogger(MainGaugePanel.class.getName()).log(Level.SEVERE, null, ex);
+                if (!shouldContinue) {
+                    System.out.println("Parallel process interrupted by user.");
+                } else {
+                    Logger.getLogger(MainGaugePanel.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
         // Start the thread
@@ -161,6 +182,12 @@ public class MainGaugePanel extends javax.swing.JPanel {
     }//GEN-LAST:event_gauge2MouseClicked
 
     private void gauge1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge1MouseClicked
+        // Check if there's an existing thread and interrupt it
+        if (parallelThread != null && parallelThread.isAlive()) {
+            shouldContinue = false; // Set the flag to false to stop the thread
+            parallelThread.interrupt(); // Interrupt the thread to stop its execution
+        }
+        
         Thread parallelThread = new Thread(() -> {
             try {
                 // Your parallel process logic here                anyGaugeMouseClicked(evt);
@@ -184,6 +211,12 @@ public class MainGaugePanel extends javax.swing.JPanel {
     }//GEN-LAST:event_gauge1MouseClicked
 
     private void gauge3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge3MouseClicked
+        // Check if there's an existing thread and interrupt it
+        if (parallelThread != null && parallelThread.isAlive()) {
+            shouldContinue = false; // Set the flag to false to stop the thread
+            parallelThread.interrupt(); // Interrupt the thread to stop its execution
+        }
+        
         Thread parallelThread = new Thread(() -> {
             try {
                 // Your parallel process logic here                anyGaugeMouseClicked(evt);
@@ -191,14 +224,20 @@ public class MainGaugePanel extends javax.swing.JPanel {
                 anyGaugeMouseClicked(evt);
                 System.out.println("Parallel process started!");
                 // Simulate some work
-                try {
-                    Thread.sleep(2000); // Sleep for 2 seconds
-                } catch (InterruptedException ex) {
-                    ex.printStackTrace();
+                while(shouldContinue){
+                    try {
+                        Thread.sleep(2000); // Sleep for 2 seconds
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    }
                 }
                 System.out.println("Parallel process completed!");
             } catch (IOException ex) {
-                Logger.getLogger(MainGaugePanel.class.getName()).log(Level.SEVERE, null, ex);
+                if (!shouldContinue) {
+                    System.out.println("Parallel process interrupted by user.");
+                } else {
+                    Logger.getLogger(MainGaugePanel.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
         // Start the thread
@@ -207,6 +246,12 @@ public class MainGaugePanel extends javax.swing.JPanel {
     }//GEN-LAST:event_gauge3MouseClicked
 
     private void gauge4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge4MouseClicked
+        // Check if there's an existing thread and interrupt it
+        if (parallelThread != null && parallelThread.isAlive()) {
+            shouldContinue = false; // Set the flag to false to stop the thread
+            parallelThread.interrupt(); // Interrupt the thread to stop its execution
+        }
+        
         Thread parallelThread = new Thread(() -> {
             try {
                 // Your parallel process logic here                anyGaugeMouseClicked(evt);
@@ -230,6 +275,12 @@ public class MainGaugePanel extends javax.swing.JPanel {
     }//GEN-LAST:event_gauge4MouseClicked
 
     private void gauge5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge5MouseClicked
+        // Check if there's an existing thread and interrupt it
+        if (parallelThread != null && parallelThread.isAlive()) {
+            shouldContinue = false; // Set the flag to false to stop the thread
+            parallelThread.interrupt(); // Interrupt the thread to stop its execution
+        }
+        
         Thread parallelThread = new Thread(() -> {
             try {
                 // Your parallel process logic here                anyGaugeMouseClicked(evt);
@@ -253,6 +304,12 @@ public class MainGaugePanel extends javax.swing.JPanel {
     }//GEN-LAST:event_gauge5MouseClicked
 
     private void gauge6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge6MouseClicked
+        // Check if there's an existing thread and interrupt it
+        if (parallelThread != null && parallelThread.isAlive()) {
+            shouldContinue = false; // Set the flag to false to stop the thread
+            parallelThread.interrupt(); // Interrupt the thread to stop its execution
+        }
+        
         Thread parallelThread = new Thread(() -> {
             try {
                 // Your parallel process logic here                anyGaugeMouseClicked(evt);
@@ -276,6 +333,12 @@ public class MainGaugePanel extends javax.swing.JPanel {
     }//GEN-LAST:event_gauge6MouseClicked
 
     private void gauge7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gauge7MouseClicked
+        // Check if there's an existing thread and interrupt it
+        if (parallelThread != null && parallelThread.isAlive()) {
+            shouldContinue = false; // Set the flag to false to stop the thread
+            parallelThread.interrupt(); // Interrupt the thread to stop its execution
+        }
+        
         Thread parallelThread = new Thread(() -> {
             try {
                 // Your parallel process logic here                anyGaugeMouseClicked(evt);
@@ -283,14 +346,20 @@ public class MainGaugePanel extends javax.swing.JPanel {
                 anyGaugeMouseClicked(evt);
                 System.out.println("Parallel process started!");
                 // Simulate some work
-                try {
-                    Thread.sleep(2000); // Sleep for 2 seconds
-                } catch (InterruptedException ex) {
-                    ex.printStackTrace();
+                while(shouldContinue){
+                    try {
+                        Thread.sleep(2000); // Sleep for 2 seconds
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    }
                 }
                 System.out.println("Parallel process completed!");
             } catch (IOException ex) {
-                Logger.getLogger(MainGaugePanel.class.getName()).log(Level.SEVERE, null, ex);
+                if (!shouldContinue) {
+                    System.out.println("Parallel process interrupted by user.");
+                } else {
+                    Logger.getLogger(MainGaugePanel.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
         // Start the thread
