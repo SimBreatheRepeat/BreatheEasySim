@@ -33,11 +33,16 @@ public class Main extends javax.swing.JPanel {
         setBackground(new java.awt.Color(40, 40, 178));
         setPreferredSize(new java.awt.Dimension(1400, 687));
 
+        chartP1.setFrequency(5.0);
         chartP1.setOpaque(false);
 
+        chartP2.setAmplitude(50.0);
         chartP2.setOpaque(false);
 
+        chartP3.setAmplitude(60.0);
+        chartP3.setFrequency(5.0);
         chartP3.setOpaque(false);
+        chartP3.setPhaseShift(2.0);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -49,7 +54,7 @@ public class Main extends javax.swing.JPanel {
                     .addComponent(chartP2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(chartP3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(chartP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(472, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -66,8 +71,8 @@ public class Main extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private BreatheEasySim.Components.Chart chartP1;
-    private BreatheEasySim.Components.Chart chartP2;
-    private BreatheEasySim.Components.Chart chartP3;
+    public BreatheEasySim.Components.Chart chartP1;
+    public BreatheEasySim.Components.Chart chartP2;
+    public BreatheEasySim.Components.Chart chartP3;
     // End of variables declaration//GEN-END:variables
 }

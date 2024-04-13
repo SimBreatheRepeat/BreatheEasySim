@@ -16,13 +16,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import org.jfree.chart.axis.NumberAxis;
 import org.jfree.chart.axis.NumberTickUnit;
-import org.jfree.data.Range;
 import org.jfree.data.xy.XYDataset;
 
 public class Chart extends JPanel {
     public XYSeries series;
     public double elapsedSeconds; // Counter for elapsed seconds
     public double amplitude = 20.0;
+    Timer timer;
 
     public double getAmplitude() {
         return amplitude;
@@ -94,13 +94,12 @@ public class Chart extends JPanel {
         add(chartPanel);
         
         // Set up a timer to add new data points every second
-        Timer timer = new Timer(10, new ActionListener() {
+        timer = new Timer(10, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 addDataPoint();
             }
         });
-        timer.start();
     }
     
     private XYDataset createDataset() {
@@ -139,6 +138,11 @@ public class Chart extends JPanel {
         // Adjust the range of the x-axis to show only the last 12 seconds
 //        plot.getDomainAxis().setRange(new Range(Math.max(0, elapsedSeconds - 12), elapsedSeconds));
 
+    }
+    
+    public void startTimer()
+    {
+        timer.start();
     }
 
     public static void main(String[] args) {

@@ -31,7 +31,7 @@
                   <Component id="chartP3" min="-2" max="-2" attributes="0"/>
                   <Component id="chartP1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="472" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -52,18 +52,32 @@
   <SubComponents>
     <Component class="BreatheEasySim.Components.Chart" name="chartP1">
       <Properties>
+        <Property name="frequency" type="double" value="5.0"/>
         <Property name="opaque" type="boolean" value="false"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="BreatheEasySim.Components.Chart" name="chartP2">
       <Properties>
+        <Property name="amplitude" type="double" value="50.0"/>
         <Property name="opaque" type="boolean" value="false"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="BreatheEasySim.Components.Chart" name="chartP3">
       <Properties>
+        <Property name="amplitude" type="double" value="60.0"/>
+        <Property name="frequency" type="double" value="5.0"/>
         <Property name="opaque" type="boolean" value="false"/>
+        <Property name="phaseShift" type="double" value="2.0"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>

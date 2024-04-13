@@ -48,6 +48,9 @@ public class MainMenu extends javax.swing.JFrame {
                     mainSidePanel1.setVisible(true);
                     mainBottomPanel1.setVisible(true);
                     mainGaugePanel1.setEnabled(true);
+                    mainScreenPanel3.main1.chartP1.startTimer();
+                    mainScreenPanel3.main1.chartP2.startTimer();
+                    mainScreenPanel3.main1.chartP3.startTimer();
                 }
             }
         });
