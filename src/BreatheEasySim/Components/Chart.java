@@ -19,7 +19,10 @@ import org.jfree.chart.axis.NumberTickUnit;
 import org.jfree.data.xy.XYDataset;
 
 public class Chart extends JPanel {
-    public XYSeries series;
+    public XYSeries seriesA;
+    public XYSeries seriesB;
+    public boolean switchSeries = false;
+    
     public double elapsedSeconds; // Counter for elapsed seconds
     public double amplitude = 20.0;
     Timer timer;
@@ -52,12 +55,14 @@ public class Chart extends JPanel {
     
     public Chart() {
         super();
-        series = new XYSeries("Random Data");
+        seriesA = new XYSeries("Data A");
+        seriesB = new XYSeries("Data B");
         
         // Pre-populate the series with NaN values
         for (double i = 0.0; i <= 1200; i++) {
             double temp = Math.round(i * 0.01 * 100) / 100.0;
-            series.add(temp, Double.NaN);
+            seriesA.add(temp, Double.NaN);
+//            seriesB.add(temp, Double.NaN);
         }
         
         elapsedSeconds = 0.0; // Initialize elapsed seconds
@@ -75,7 +80,9 @@ public class Chart extends JPanel {
         // Customize the line renderer (optional)
         XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
         renderer.setSeriesPaint(0, Color.BLUE); // Set line color (blue in this case)
+        renderer.setSeriesPaint(1, Color.BLUE); // Set line color (blue in this case)
         renderer.setSeriesShapesVisible(0, false);
+        renderer.setSeriesShapesVisible(1, false);
         plot.setRenderer(renderer);
         
         NumberAxis xAxis = (NumberAxis) plot.getDomainAxis();
@@ -104,7 +111,8 @@ public class Chart extends JPanel {
     
     private XYDataset createDataset() {
         XYSeriesCollection dataset = new XYSeriesCollection();
-        dataset.addSeries(series);
+        dataset.addSeries(seriesA);
+        dataset.addSeries(seriesB);
         return dataset;
     }
     
@@ -125,10 +133,23 @@ public class Chart extends JPanel {
     
     private void addDataPoint() {
         double val = Math.round(elapsedSeconds * 100%1200) / 100.0;
-        int index = series.indexOf(val);
-        series.remove(index);
+        if(0.0 == val)
+        {
+            switchSeries = !switchSeries;
+            System.out.println("Switched");
+        }
         double yValue = amplitude * Math.sin(frequency * elapsedSeconds + phaseShift);
-        series.addOrUpdate(val, yValue); // Use modulo operator to reset x to 0 when it exceeds 12
+
+        if(switchSeries) {
+            seriesA.remove(0);
+            seriesB.addOrUpdate(val, yValue); // Use modulo operator to reset x to 0 when it exceeds 12
+        }
+        else {
+            seriesB.remove(0);
+            seriesA.addOrUpdate(val, yValue); // Use modulo operator to reset x to 0 when it exceeds 12
+        }
+//        series.remove(index + 1);
+        
         elapsedSeconds+=.01; // Increment elapsed seconds
         
         // Fix precision issue
