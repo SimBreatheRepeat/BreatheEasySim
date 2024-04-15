@@ -21,6 +21,7 @@ public class MainGaugePanel extends javax.swing.JPanel {
      */
     public MainGaugePanel() {
         initComponents();
+        setGaugeDefaults();
     }
 
     /**
@@ -70,7 +71,7 @@ public class MainGaugePanel extends javax.swing.JPanel {
             }
         });
         add(gauge3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 180, 141));
-        gauge3.jLabel4.setText("<html><body style='text-align: center'>L<br>Volume</html>");
+        gauge3.jLabel4.setText("<html><body style='text-align: center'>mL<br>Volume</html>");
 
         gauge4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -109,6 +110,17 @@ public class MainGaugePanel extends javax.swing.JPanel {
     private volatile boolean shouldContinue = true;
     private volatile Thread parallelThread;
     
+    private void setGaugeDefaults(){
+        gauge3.setMax(1000);
+        gauge2.changeValue(12);
+        gauge3.changeValue(500);
+        gauge4.changeValue(60);
+        gauge5.changeValue(0);
+        gauge1.changeValue(6);
+        gauge6.changeValue(1);
+        gauge7.changeValue(40);
+    }
+    
     private void anyGaugeMouseClicked(java.awt.event.MouseEvent evt) throws IOException {
         // Get the source of the click event (the gauge that was clicked)
         Object source = evt.getSource();
@@ -127,8 +139,7 @@ public class MainGaugePanel extends javax.swing.JPanel {
             
             System.out.printf("python /home/pi/Desktop/dist/rotary_encoder.py --min %s --max %s --counter %s --rate %s\n", min, max, counter, rate);
         
-            ProcessBuilder processBuilder = new ProcessBuilder("python", "/home/pi/Desktop/dist/rotary_encoder.py", 
-                    "--min", min, "--max", max, "--counter", counter, "--rate", rate);
+            ProcessBuilder processBuilder = new ProcessBuilder("/Users/calebgomez/anaconda3/bin/python", "rotary_encoder.py");
             Process proc = processBuilder.start();
 
             BufferedReader stdInput = new BufferedReader(new InputStreamReader(proc.getInputStream()));

@@ -65,7 +65,7 @@
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="gauge3MouseClicked"/>
       </Events>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="gauge3.jLabel4.setText(&quot;&lt;html&gt;&lt;body style=&apos;text-align: center&apos;&gt;L&lt;br&gt;Volume&lt;/html&gt;&quot;);"/>
+        <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="gauge3.jLabel4.setText(&quot;&lt;html&gt;&lt;body style=&apos;text-align: center&apos;&gt;mL&lt;br&gt;Volume&lt;/html&gt;&quot;);"/>
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
