@@ -92,6 +92,10 @@ public class Gauge extends javax.swing.JPanel {
         genericGauge.setValue(val);
     }
     
+    public int getValue() {
+        return genericGauge.getValue();
+    }
+    
     public float getMax() {
         return max;
     }

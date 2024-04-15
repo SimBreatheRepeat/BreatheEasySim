@@ -14,6 +14,8 @@ import java.awt.*;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.jfree.chart.axis.NumberAxis;
 import org.jfree.chart.axis.NumberTickUnit;
 import org.jfree.data.xy.XYDataset;
@@ -60,7 +62,7 @@ public class Chart extends JPanel {
         
         // Pre-populate the series with NaN values
         for (double i = 0.0; i <= 1200; i++) {
-            double temp = Math.round(i * 0.01 * 100) / 100.0;
+            double temp = Math.round(i * 0.02 * 100) / 100.0;
             seriesA.add(temp, Double.NaN);
 //            seriesB.add(temp, Double.NaN);
         }
@@ -101,7 +103,7 @@ public class Chart extends JPanel {
         add(chartPanel);
         
         // Set up a timer to add new data points every second
-        timer = new Timer(10, new ActionListener() {
+        timer = new Timer(14, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 addDataPoint();
@@ -150,14 +152,20 @@ public class Chart extends JPanel {
         }
 //        series.remove(index + 1);
         
-        elapsedSeconds+=.01; // Increment elapsed seconds
+        elapsedSeconds+=.02; // Increment elapsed seconds
         
         // Fix precision issue
         elapsedSeconds = Math.round(elapsedSeconds * 100) / 100.0;
         
-
-        // Adjust the range of the x-axis to show only the last 12 seconds
+        try {
+            Thread.sleep(3);
+            
+            
+            // Adjust the range of the x-axis to show only the last 12 seconds
 //        plot.getDomainAxis().setRange(new Range(Math.max(0, elapsedSeconds - 12), elapsedSeconds));
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Chart.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
     }
     

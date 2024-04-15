@@ -54,6 +54,8 @@ public class MainGaugePanel extends javax.swing.JPanel {
         add(gauge1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 0, 180, 141));
         gauge1.jLabel4.setText("<html><body style='text-align: center'>cmH2O<br>PEEP</html>");
 
+        gauge2.setMin(50.0F);
+        gauge2.setName(""); // NOI18N
         gauge2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 gauge2MouseClicked(evt);
@@ -113,12 +115,20 @@ public class MainGaugePanel extends javax.swing.JPanel {
 
         // Check if the source is a BreatheEasySim.Components.Gauge object
         if (source instanceof BreatheEasySim.Components.Gauge) {
-          selectedGauge = (BreatheEasySim.Components.Gauge) source;
-          BreatheEasySim.Components.Gauge prevselectedGauge = selectedGauge;
+            selectedGauge = (BreatheEasySim.Components.Gauge) source;
+            BreatheEasySim.Components.Gauge prevselectedGauge = selectedGauge;
           
-          System.out.println(System.getProperty("user.dir"));
+            System.out.println(System.getProperty("user.dir"));
+            
+            String min = "" + (int)selectedGauge.getMin();
+            String max = "" + (int)selectedGauge.getMax();
+            String counter = "" + (int)selectedGauge.getValue();
+            String rate = "1";
+            
+            System.out.printf("python /home/pi/Desktop/dist/rotary_encoder.py --min %s --max %s --counter %s --rate %s\n", min, max, counter, rate);
         
-            ProcessBuilder processBuilder = new ProcessBuilder("python", "rotary_encoder.py");
+            ProcessBuilder processBuilder = new ProcessBuilder("python", "/home/pi/Desktop/dist/rotary_encoder.py", 
+                    "--min", min, "--max", max, "--counter", counter, "--rate", rate);
             Process proc = processBuilder.start();
 
             BufferedReader stdInput = new BufferedReader(new InputStreamReader(proc.getInputStream()));
