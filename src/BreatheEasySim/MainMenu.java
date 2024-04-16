@@ -244,11 +244,15 @@ public class MainMenu extends javax.swing.JFrame {
             if(s.equals("Screens")) {
                 System.out.println("Executing Screens");
                 if(screenSelect1.isVisible()){
-                    screenSelect1.setVisible(false);
-                }
-                else{
-                    screenSelect1.setVisible(true);
-                } 
+                        screenSelect1.setVisible(false);
+                        mainScreenPanel3.main1.chartP1.timer.start();
+                        mainScreenPanel3.main1.chartP2.timer.start();
+                    }
+                    else{
+                        screenSelect1.setVisible(true);
+                        mainScreenPanel3.main1.chartP1.timer.stop();
+                        mainScreenPanel3.main1.chartP2.timer.stop();
+                    } 
             }
             if(s.equals("Mode")) {
                 System.out.println("Executing Mode");

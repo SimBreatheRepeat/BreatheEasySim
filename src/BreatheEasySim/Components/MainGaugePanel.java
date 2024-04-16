@@ -139,7 +139,8 @@ public class MainGaugePanel extends javax.swing.JPanel {
             
             System.out.printf("python /home/pi/Desktop/dist/rotary_encoder.py --min %s --max %s --counter %s --rate %s\n", min, max, counter, rate);
         
-            ProcessBuilder processBuilder = new ProcessBuilder("/Users/calebgomez/anaconda3/bin/python", "rotary_encoder.py");
+            ProcessBuilder processBuilder = new ProcessBuilder("python", "/home/pi/Desktop/dist/rotary_encoder.py", 
+                    "--min", min, "--max", max, "--counter", counter, "--rate", rate);
             Process proc = processBuilder.start();
 
             BufferedReader stdInput = new BufferedReader(new InputStreamReader(proc.getInputStream()));
