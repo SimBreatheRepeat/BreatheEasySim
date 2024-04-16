@@ -27,7 +27,7 @@ public class Chart extends JPanel {
     
     public double elapsedSeconds; // Counter for elapsed seconds
     public double amplitude = 20.0;
-    Timer timer;
+    public Timer timer;
 
     public double getAmplitude() {
         return amplitude;

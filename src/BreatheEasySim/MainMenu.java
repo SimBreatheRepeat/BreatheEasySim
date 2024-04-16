@@ -11,6 +11,8 @@ import java.awt.Toolkit;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
 
 /**
@@ -61,10 +63,14 @@ public class MainMenu extends javax.swing.JFrame {
                 if(!startup1.patientAccept.getParent().isVisible())
                 {
                     if(screenSelect1.isVisible()){
-                    screenSelect1.setVisible(false);
+                        screenSelect1.setVisible(false);
+                        mainScreenPanel3.main1.chartP1.timer.start();
+                        mainScreenPanel3.main1.chartP2.timer.start();
                     }
                     else{
                         screenSelect1.setVisible(true);
+                        mainScreenPanel3.main1.chartP1.timer.stop();
+                        mainScreenPanel3.main1.chartP2.timer.stop();
                     } 
                     System.out.println("Main Label Clicked!");
                 }
@@ -80,6 +86,8 @@ public class MainMenu extends javax.swing.JFrame {
                 mainScreenPanel3.main1.setVisible(false);
                 mainSidePanel1.mainSide1.setVisible(false);
                 mainLabel.setText("UTILITY");
+                mainScreenPanel3.main1.chartP1.timer.start();
+                mainScreenPanel3.main1.chartP2.timer.start();
                 
             }
         });
@@ -93,6 +101,8 @@ public class MainMenu extends javax.swing.JFrame {
                 mainScreenPanel3.utilities.setVisible(false);
                 mainSidePanel1.utilitiesSide1.setVisible(false);
                 mainLabel.setText("MAIN");  
+                mainScreenPanel3.main1.chartP1.timer.start();
+                mainScreenPanel3.main1.chartP2.timer.start();
             }
         });
     }
