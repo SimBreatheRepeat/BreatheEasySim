@@ -9,10 +9,14 @@ import java.awt.Dimension;
 import java.awt.event.*;
 import java.awt.Toolkit;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.JFrame;
 
 /**
@@ -26,10 +30,6 @@ public class MainMenu extends javax.swing.JFrame {
      */
     
     public MainMenu() {
-        /*GraphicsEnvironment graphics =
-        GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice device = graphics.getDefaultScreenDevice();
-        device.setFullScreenWindow(this);*/
         
         initComponents();
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -105,6 +105,7 @@ public class MainMenu extends javax.swing.JFrame {
                 mainScreenPanel3.main1.chartP2.timer.start();
             }
         });
+        
     }
     
     
@@ -181,6 +182,7 @@ public class MainMenu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+
     /**
      * @param args the command line arguments
      */
@@ -207,6 +209,7 @@ public class MainMenu extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(MainMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -258,6 +261,22 @@ public class MainMenu extends javax.swing.JFrame {
             }
             if(s.equals("Pump On/Off")) {
                 System.out.println("Executing Pump On/Off");
+                try{
+                    String filepath = "src/BreatheEasySim/Alarms/alarm_highpriority.wav";
+                    AudioInputStream audios = AudioSystem.getAudioInputStream(new File(filepath).getAbsoluteFile());
+                    System.out.println("Audio!!!");
+                        try{
+                            Clip clip = AudioSystem.getClip();            
+                            clip.open(audios);
+                            clip.start();
+                            clip.loop(1);
+
+                        } catch(Exception e){
+                          System.out.println(e);
+                            }
+                }catch(Exception e){
+                        System.out.println(e);
+                    }
             }
             if(s.equals("Accept")) {
                 System.out.println("Executing Accept");

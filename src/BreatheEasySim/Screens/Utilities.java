@@ -181,8 +181,10 @@ public class Utilities extends javax.swing.JPanel {
         increaseButton.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
+                
                     System.out.println("increaseButton Clicked!");
             }
+
             /*@Override
             public void mousePressed(java.awt.event.MouseEvent e) {
                 System.out.println("loop Button Pressed!");
