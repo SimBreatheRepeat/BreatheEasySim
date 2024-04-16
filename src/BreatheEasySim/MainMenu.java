@@ -222,7 +222,7 @@ public class MainMenu extends javax.swing.JFrame {
         System.out.printf("%f, %f", screenSize.getWidth(), screenSize.getHeight());
         System.out.println(System.getProperty("user.dir"));
         
-        ProcessBuilder processBuilder = new ProcessBuilder("python", "middleware.py");
+        ProcessBuilder processBuilder = new ProcessBuilder("python", "/home/pi/Desktop/dist/middleware.py");
         Process proc = processBuilder.start();
 
         BufferedReader stdInput = new BufferedReader(new InputStreamReader(proc.getInputStream()));
