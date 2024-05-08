@@ -158,7 +158,7 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel2.setBackground(new java.awt.Color(255, 51, 51));
         jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("CIRCUIT DISCONECT");
+        jLabel2.setText("AIR PUMP OFF");
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jLabel2.setOpaque(true);
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 160, 44));
@@ -229,6 +229,7 @@ public class MainMenu extends javax.swing.JFrame {
 
         // Read the output from the command
         String s = null;
+        boolean airpump = false;
         while ((s = stdInput.readLine()) != null) {
             System.out.println(s);
             
@@ -265,9 +266,11 @@ public class MainMenu extends javax.swing.JFrame {
             }
             if(s.equals("Pump On/Off")) {
                 System.out.println("Executing Pump On/Off");
+                airpump = !airpump;
+                jLabel2.setText("AIR PUMP " + (airpump ? "ON": "OFF"));
                 try{
-                    String filepath = "src/BreatheEasySim/Alarms/alarm_highpriority.wav";
-                    AudioInputStream audios = AudioSystem.getAudioInputStream(new File(filepath).getAbsoluteFile());
+                    String filepath = "/Alarms/alarm_highpriority.wav";
+                    AudioInputStream audios = AudioSystem.getAudioInputStream(MainMenu.class.getResourceAsStream(filepath));
                     System.out.println("Audio!!!");
                         try{
                             Clip clip = AudioSystem.getClip();            
@@ -289,7 +292,7 @@ public class MainMenu extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private static javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     public BreatheEasySim.Components.MainBottomPanel mainBottomPanel1;
     private BreatheEasySim.Components.MainGaugePanel mainGaugePanel1;
