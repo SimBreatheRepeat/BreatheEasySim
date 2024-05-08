@@ -102,6 +102,7 @@ public class Gauge extends javax.swing.JPanel {
     
     public void setMax(float m) {
         max = m;
+        genericGauge.setMaximum((int)max);
     }
 
     public float getMin() {
@@ -110,6 +111,7 @@ public class Gauge extends javax.swing.JPanel {
 
     public void setMin(float min) {
         this.min = min;
+        genericGauge.setMaximum((int)min);
     }
 
     public boolean isIsInt() {

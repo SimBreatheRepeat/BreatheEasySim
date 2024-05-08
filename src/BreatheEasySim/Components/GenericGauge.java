@@ -139,10 +139,9 @@ public class GenericGauge extends JComponent {
 
     private void drawText(Graphics2D g2, float x, float y, float size) {
         g2.setColor(getForeground());
-        float max = maximum;
         float v = getValueFixed();
-        float n = v / max * 100f;
-        String text = String.valueOf((int) n);
+        String text = String.valueOf((int) v);
+        System.out.println(v);
         FontMetrics ft = g2.getFontMetrics();
         g2.setFont(new Font("Segoe UI", Font.BOLD, 50));
         g2.setColor(Color.WHITE);
